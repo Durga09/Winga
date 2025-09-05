@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    >
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/childLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/colorPrimaryDark"
+        >
+
+        <ImageView
+            android:id="@+id/backIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="@dimen/twenty"
+            android:src="@drawable/ic_back_black"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Watch &amp; Earn"
+            android:textSize="@dimen/eighteen"
+            android:textStyle="bold"
+            android:fontFamily="@font/lato_regular"
+            android:textColor="@color/popup_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.41"
+            app:layout_constraintStart_toEndOf="@id/backIv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/failureReasonsIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:src="@drawable/ic_info_yellow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@color/colorBlack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="@dimen/twenty"
+
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:id="@+id/games"
+        android:orientation="vertical"
+
+        android:layout_marginTop="@dimen/thirty"
+        android:layout_width="match_parent"
+
+        android:background="@drawable/red_gradient_bg"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="@dimen/thirty"
+        android:layout_marginEnd="@dimen/thirty"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/childLayout"
+        android:visibility="gone"
+
+        >
+
+
+        <TextView
+            android:id="@+id/gameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="@dimen/twenty"
+            android:fontFamily="sans-serif-black"
+            android:text="వింగా క్విజ్ "
+            android:textSize="@dimen/thirty"
+
+
+            />
+
+
+    </LinearLayout>
+
+
+    <!--    <LinearLayout-->
+<!--        android:id="@+id/games"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/logoIv"-->
+<!--        android:layout_marginTop="@dimen/forty"-->
+<!--        android:layout_width="300dp"-->
+
+<!--         android:background="@drawable/red_gradient_bg"-->
+<!--        android:layout_height="wrap_content">-->
+
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:padding="@dimen/twenty"-->
+<!--            android:fontFamily="sans-serif-black"-->
+<!--            android:text="వింగా క్విజ్ "-->
+<!--            android:textSize="@dimen/thirty"-->
+
+
+<!--            />-->
+
+
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/playMoreGamesLL"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/games"-->
+<!--        android:layout_marginTop="@dimen/twenty"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:background="@drawable/red_gradient_bg"-->
+<!--        android:layout_height="wrap_content">-->
+
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:padding="@dimen/twenty"-->
+<!--            android:fontFamily="sans-serif-black"-->
+<!--            android:text="సర్వేలు"-->
+<!--            android:textSize="@dimen/thirty"-->
+
+
+<!--            />-->
+
+
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/youthQuiz"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/playMoreGamesLL"-->
+<!--       android:layout_marginTop="@dimen/twenty"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:background="@drawable/red_gradient_bg"-->
+<!--        android:layout_height="wrap_content">-->
+
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:padding="@dimen/twenty"-->
+<!--            android:fontFamily="sans-serif-black"-->
+<!--            android:text="గృహిణిల క్విజ్"-->
+<!--            android:textSize="@dimen/thirty"-->
+
+
+<!--            />-->
+
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/eldersQuiz"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/youthQuiz"-->
+<!--        android:layout_marginTop="@dimen/twenty"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:background="@drawable/red_gradient_bg"-->
+
+<!--        android:layout_height="wrap_content">-->
+
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:padding="@dimen/twenty"-->
+<!--            android:fontFamily="sans-serif-black"-->
+<!--            android:text="పిల్లల క్విజ్"-->
+<!--            android:textSize="@dimen/thirty"-->
+
+
+<!--            />-->
+
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/genaralQuiz"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/eldersQuiz"-->
+<!--        android:layout_marginTop="@dimen/twenty"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:background="@drawable/red_gradient_bg"-->
+<!--        android:layout_height="wrap_content">-->
+
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:padding="@dimen/twenty"-->
+<!--            android:fontFamily="sans-serif-black"-->
+<!--            android:text="జనరల్ క్విజ్"-->
+<!--            android:textSize="@dimen/thirty"-->
+
+
+<!--            />-->
+
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/surveys"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/genaralQuiz"-->
+<!--        android:layout_marginTop="@dimen/twenty"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:visibility="gone"-->
+<!--        android:background="@drawable/red_gradient_bg"-->
+<!--        android:layout_height="wrap_content">-->
+
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:padding="@dimen/twenty"-->
+<!--            android:fontFamily="sans-serif-black"-->
+<!--            android:text="పిల్లల క్విజ్"-->
+<!--            android:textSize="@dimen/thirty"-->
+
+
+<!--            />-->
+
+
+<!--    </LinearLayout>-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categoryRv"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/thirty"
+        android:layout_marginEnd="@dimen/thirty"
+        android:layout_marginTop="@dimen/forty"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:listitem="@layout/item_category"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/games" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/profileRL"
+            android:layout_width="@dimen/profile_tab_width"
+            android:layout_height="@dimen/profile_tab_height"
+            android:background="@drawable/level_one"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilePicIV"
+                android:layout_width="@dimen/home_profile_pic_dimen"
+                android:layout_height="@dimen/home_profile_pic_dimen"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/twenty"
+                android:src="@drawable/ic_user_filled" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pointsRL"
+            android:layout_width="@dimen/profile_tab_width"
+            android:layout_height="@dimen/profile_tab_height"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/points_bg"
+            android:minWidth="@dimen/profile_tab_width"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/pointsLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <in.eightfolds.winga.utils.BernhcTextView
+                    android:id="@+id/pointTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/twenty"
+                    android:textColor="@color/red_color"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/lato_regular"
+                    tools:text="15000" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

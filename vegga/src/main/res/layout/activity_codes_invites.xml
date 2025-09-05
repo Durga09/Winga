@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/winga_bg_color"
+        android:orientation="vertical"
+        android:layout_above="@+id/adFragment">
+
+        <include layout="@layout/headerlay" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/headerLL"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/activityTabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/status_bar_color"
+
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@color/app_theme_red"
+                app:tabIndicatorHeight="3dp"
+                app:tabMaxWidth="0dp"
+
+                app:tabSelectedTextColor="@color/winga_bg_color"
+                app:tabTextAppearance="@style/my_tab_text"
+                app:tabTextColor="@color/header_text_color_50"
+
+                />
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/fragmentPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/adFragment"
+        android:name="in.eightfolds.winga.fragment.AdBannerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal" />
+
+</RelativeLayout>

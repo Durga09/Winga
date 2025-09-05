@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <!--yellow_hint_color-->
+
+    <TextView
+        android:id="@+id/titleExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/fifteen"
+        android:text="@string/notifications"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="16dp" />
+
+    <View
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="1.3dp"
+        android:layout_marginLeft="@dimen/five"
+        android:layout_marginRight="@dimen/five"
+        android:layout_marginTop="@dimen/fifteen"
+        android:background="@color/gray_color" />
+
+    <TextView
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/fifteen"
+        android:layout_marginBottom="@dimen/fifteen"
+        android:text="Exit"
+        android:textColor="@color/colorBlack"
+        android:textSize="16dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/ten"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="25dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/noText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/no"
+            android:textColor="@color/colorBlack"
+            android:padding="@dimen/five"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/yesTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/noText"
+            android:text="@string/yes"
+            android:textColor="@color/app_theme_red"
+            android:padding="@dimen/five"
+            android:textSize="16dp" />
+    </RelativeLayout>
+</LinearLayout>

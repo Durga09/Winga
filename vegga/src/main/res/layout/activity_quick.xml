@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/winga_bg_color">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:id="@+id/bottomLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBlack"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/skipTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/twenty"
+            android:text="@string/skip"
+            android:textColor="@color/colorWhite"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/lato_regular"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/imagesLL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/thirty"
+            android:layout_toRightOf="@+id/skipTv"
+            android:layout_toLeftOf="@id/nextTv"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/nextTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/twenty"
+            android:text="@string/next"
+            android:textColor="@color/colorWhite"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/lato_regular"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/ten"
+    android:layout_marginRight="@dimen/ten">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/winLossGifIV"
+            android:layout_width="@dimen/result_tick_width"
+            android:layout_height="@dimen/result_tick_width"
+            android:layout_gravity="center"
+            tools:src="@drawable/correctanswer" />
+
+        <TextView
+            android:id="@+id/resultStatusTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/five"
+            android:text="1st Answer"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

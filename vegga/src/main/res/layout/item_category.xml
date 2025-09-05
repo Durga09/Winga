@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/games"
+    android:orientation="vertical"
+
+    android:layout_marginTop="@dimen/thirty"
+    android:layout_width="300dp"
+    android:gravity="center"
+    android:background="@drawable/yellow_gradient_bg"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:id="@+id/gameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="@dimen/fifteen"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato_regular"
+        android:text="వింగా క్విజ్ "
+        android:textSize="@dimen/fifteen"
+
+
+        />
+
+
+</LinearLayout>

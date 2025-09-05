@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:background="@color/winga_bg_color">
+
+
+
+
+    <TextView
+        android:id="@+id/sessionNameTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fifteen"
+        android:layout_marginTop="@dimen/title_margin"
+        android:gravity="center_vertical"
+        android:textColor="@color/yellow_header_color"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        tools:text="02:30 AM"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/myProfileLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/five"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/myProfilePicIV"
+            app:civ_border_color="@color/colorWhite"
+            app:civ_border_width="1dp"
+            android:layout_width="@dimen/winners_me_ic_dimen"
+            android:layout_height="@dimen/winners_me_ic_dimen"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/ten"
+            android:src="@drawable/ic_user_filled" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mynameTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorWhite"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                tools:text="Vivek Giri" />
+
+            <TextView
+                android:id="@+id/myGiftTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/transparent_colorWhite"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                tools:text="You won a Pendrive" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ten"
+        android:layout_marginRight="@dimen/fifteen"
+        android:layout_marginTop="@dimen/ten"
+        android:orientation="horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/yesterDayWinnersRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/winner_item_lay"
+            tools:orientation="horizontal"
+            android:layout_toLeftOf="@id/winnerCountLL"
+
+            tools:spanCount="2" />
+
+        <LinearLayout
+            android:id="@+id/winnerCountLL"
+            android:layout_width="@dimen/winners_ic_dimen"
+            android:layout_height="@dimen/winners_ic_dimen"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="-0dp"
+            android:background="@drawable/white_filled_circle"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/winnersCountTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                tools:text="+491" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/users"
+                android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/giftsWinTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/twenty"
+        android:layout_marginRight="@dimen/twenty"
+        android:layout_marginTop="@dimen/fifteen"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp"
+        tools:text="500 users won Pendrives in yesterday's lucky dip" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/fifteen"
+    android:paddingLeft="@dimen/five"
+    android:paddingRight="@dimen/five"
+    android:paddingTop="@dimen/fifteen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/shortNameTv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/blue_circle_bg"
+            android:gravity="center"
+            android:padding="@dimen/three"
+            android:text="NKPK"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Naveen Kumar"
+                android:textColor="@color/address_text_color"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/mobTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91 97895 69852"
+                android:textColor="@color/address_hint_text_color"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pointsTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="100 Rupees"
+        android:textColor="@color/green_circle_color"
+        android:textSize="16dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="@dimen/reward_item_dimen"
+    android:layout_height="@dimen/reward_item_dimen"
+    android:layout_margin="@dimen/ten"
+    android:id="@+id/mainLL">
+
+
+
+    <ImageView
+        android:id="@+id/prizeWinLoseIV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/rewards_yellow"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp">
+
+                <TextView
+                    android:id="@+id/youWonTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/you_won"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/giftTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="123567890123567890123567890"
+                    android:lines="1"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="14dp"/>
+                <TextView
+                    android:id="@+id/poinstOrAmountTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="points or amount"
+                    android:lines="1"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="14dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

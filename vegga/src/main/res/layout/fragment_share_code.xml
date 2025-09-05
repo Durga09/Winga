@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@color/winga_bg_color">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/twenty_five"
+            android:src="@drawable/sharefriends" />
+
+        <TextView
+            android:id="@+id/pointsToBeEarnedTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/twenty"
+            android:gravity="center"
+            android:text="@string/win_points_on_refer"
+            android:textColor="@color/colorWhite"
+            android:textSize="14dp" />
+
+
+        <LinearLayout
+            android:id="@+id/tapAreaLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/referralCodeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/thirty"
+                android:paddingRight="@dimen/thirty"
+                android:paddingBottom="@dimen/five"
+                android:textColor="@color/yellow_header_color"
+                android:textSize="@dimen/ref_code_text_size"
+                tools:text="EHE830" />
+
+
+            <TextView
+                android:id="@+id/tapToCopyTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/tap_to_copy"
+                android:textColor="@color/address_hint_text_color"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/shareBtn"
+            style="@style/yesterday_winners_btn_style"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/twenty_five"
+            android:layout_marginBottom="@dimen/twenty_five"
+            android:paddingLeft="@dimen/twenty"
+            android:paddingRight="@dimen/twenty"
+            android:text="@string/share_code" />
+
+
+        <LinearLayout
+            android:id="@+id/shareCodeLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twenty_five"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/three"
+                android:src="@drawable/ic_share" />
+
+            <TextView
+                android:id="@+id/shareCodeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten"
+                android:text="@string/share_code"
+                android:textColor="@color/app_theme_red"
+
+                android:textSize="24dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

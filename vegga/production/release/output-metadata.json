@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.veggaappsol.winga",
+  "variantName": "processProductionReleaseResources",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "versionCode": 43,
+      "versionName": "3.0.6",
+      "outputFile": "vegga-production-release.apk"
+    }
+  ]
+}

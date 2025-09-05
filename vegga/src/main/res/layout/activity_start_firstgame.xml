@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/winga_bg_color">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="45">
+
+
+            <in.eightfolds.winga.utils.CustomImageView
+                android:id="@+id/regSuccessGifIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/start_first_game" />
+
+
+<!--
+            <ImageView
+                android:id="@+id/regSuccessGifIV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="visible"
+                android:src="@drawable/start_first_game"
+                android:scaleType="centerCrop" />
+-->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="55">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/hurry_text"
+                    android:textColor="@color/app_theme_red"
+                    android:textSize="26dp"
+                    android:textStyle="bold"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/successTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/successful"
+                    android:textColor="@color/app_theme_red"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/playPointsTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fifty"
+                    android:layout_marginRight="@dimen/fifty"
+                    android:layout_marginTop="@dimen/ten"
+                    android:gravity="center"
+                    android:text="@string/play_game_get_rupees"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18dp"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/pointRupeeTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/thirty"
+                    android:layout_marginRight="@dimen/thirty"
+                    android:layout_marginTop="@dimen/ten"
+                    android:gravity="center"
+                    android:text="@string/point_rupee"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:visibility="gone"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/playGameRL"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+
+                    android:layout_marginTop="@dimen/thirty"
+                    android:background="@drawable/red_gradient_button_bg"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/playGameTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="@string/lets_start"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="@dimen/fifty"
+                        android:layout_height="@dimen/fifty"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/play" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

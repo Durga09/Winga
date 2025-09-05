@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@color/transcolorBlack_sixty">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/exitTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/ten"
+            android:layout_marginTop="@dimen/ten"
+            android:padding="@dimen/five"
+            android:text="@string/exit"
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/pop_up_margin"
+            android:layout_marginRight="@dimen/pop_up_margin"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/contentLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/popUpHeaderRL"
+                android:layout_marginTop="@dimen/twenty_five"
+                android:background="@drawable/new_dailog_border"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/thirty_five"
+                android:paddingBottom="@dimen/forty_five">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="You have won 20 free points"
+                    android:textSize="@dimen/twenty_two"
+                    android:padding="3dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/lato_regular"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/title_margin"
+                    android:gravity="center"
+                    android:text="@string/wow_you_earned"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <in.eightfolds.winga.utils.BernhcTextView
+                        android:id="@+id/pointsTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="1000"
+                        android:textColor="@color/vegga_yellow"
+                        android:textSize="32dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pointsDescTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="@dimen/five"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/point"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/title_margin"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:text="@string/play_more_to_earn_points"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/popUpHeaderRL"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seventy"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/scratch_won_margin_bottom"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:visibility="invisible"
+                android:background="@drawable/popupheader">
+
+                <ImageView
+                    android:id="@+id/popUpHeaderIv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/seventy"
+                    android:layout_gravity="center"
+                    android:paddingBottom="@dimen/ten"
+                    android:src="@drawable/points" />
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/continueBtn"
+                android:layout_width="wrap_content"
+                android:minWidth="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_below="@+id/contentLL"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="@dimen/ten"
+                android:paddingRight="@dimen/ten"
+                android:layout_gravity="center"
+                android:layout_marginTop="-25dp"
+                android:background="@drawable/red_gradient_button_bg"
+                android:lines="1"
+                android:text="@string/play_more_games"
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="@dimen/five"
+            android:gravity="center"
+            android:text="@string/or"
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:textColor="@color/colorBlack" />
+
+    </RelativeLayout>
+
+</LinearLayout>

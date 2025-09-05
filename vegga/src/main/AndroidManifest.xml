@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="in.eightfolds.winga">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.LOCAL_MAC_ADDRESS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+        <intent>
+            <action android:name="android.media.action.VIDEO_CAPTURE" />
+        </intent>
+    </queries>
+
+
+  <!--  <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>-->
+    <application
+        android:allowBackup="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:configChanges="locale"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:testOnly="false"
+        android:theme="@style/AppTheme"
+        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true"
+        android:windowSoftInputMode="adjustPan"
+        android:name="in.eightfolds.WingaApplication"
+        android:enableOnBackInvokedCallback="true"
+
+        tools:replace="android:allowBackup,android:appComponentFactory,android:label,android:supportsRtl"
+        >
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3530294870311813~4537884618" />
+
+        <activity android:name=".activity.TestActivity"></activity>
+        <activity
+            android:name=".activity.SpinAndWinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SplashScreenActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <!--
+                  <action android:name="android.intent.action.VIEW"/>
+                  <category android:name="android.intent.category.DEFAULT"/>
+                  <category android:name="android.intent.category.BROWSABLE"/>
+                  <data android:host="yoursite.example.com" android:scheme="http"/>
+                  <data android:host="yoursite.example.com" android:scheme="https"/>
+                -->
+
+            </intent-filter>
+        </activity>
+            <activity
+                android:name=".activity.LoginActivity"
+                android:screenOrientation="portrait" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name=".activity.HomeBaseActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.FormResultsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:configChanges="locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SessionWinnerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NotificationDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StartGameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TotalRewardsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoyaltyPointsHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PlayHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QuickTourActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|layoutDirection|smallestScreenSize|screenLayout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QuestionsAndAnswersFragmentActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|layoutDirection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HistoryFilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WebBrowserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CodesAndInvitesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LanguageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DeactivateAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ResultsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AddNewAddressActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.RegistrationSuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StartFirstGameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ImageViewEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RecentWinnersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AlertsPromosUpdatesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ResetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CongratulationsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SupportRequestDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PaytmTransferSuccessfulActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FindPhoneNumActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EnterCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FirstGameWonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TransferMoneyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NoInternetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WinLuckyDrawActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UpdateProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.RedeemPointsUsingPaytmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:configChanges="locale"
+            android:theme="@style/ThemeSwipeBack" />
+        <activity
+            android:name=".activity.AdActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|layoutDirection" />
+        <activity
+            android:name=".activity.ImageViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SessionWinnersListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SpecialSessionsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VouchersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WingaNotLiveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HtmlGameSessionActicity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChildCategoriesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AnouncementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AnouncementDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.V2HomeFeatureActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.V2BannerDetailsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.V2SpinAndWinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.V2OttActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.V2SpinWinVoucherActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.V2PlayVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            />
+
+        <activity
+            android:name=".activity.V2GuessTheBrand"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.V2GuessWonDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.V2StreamingWonDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".activity.V2WingaStoreActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activity.V2CategoryHomeActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activity.V2StreamingShowPopupActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".activity.V2ViewAllActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activity.V2ProductDetailActivity"
+            android:screenOrientation="portrait"
+
+            />
+
+        <activity android:name=".activity.V2InstagramReelsActivity"
+            android:screenOrientation="portrait"
+
+            />
+        <activity android:name=".activity.V2BrandsItemsListActivity"
+            android:screenOrientation="portrait"
+
+            />
+        <activity
+            android:name=".activity.SupportActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/supportActivityTheme" />
+
+        <receiver
+            android:name=".receiver.IncomingSms"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+           >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <service
+            android:name=".fcm.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

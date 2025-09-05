@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twenty">
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/titleTv"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="@string/transfer_may_fail_paytm"-->
+        <!--            android:textColor="@color/colorBlack"-->
+        <!--            android:textSize="16dp-->
+        <!--            android:textStyle="bold" />-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="@string/paytm_failure_reason_one"-->
+        <!--            android:layout_marginTop="@dimen/fifteen"-->
+        <!--            android:textColor="@color/colorBlack"-->
+        <!--            android:textSize="14dp />-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="@string/paytm_failure_reason_two"-->
+        <!--            android:layout_marginTop="@dimen/ten"-->
+        <!--            android:textColor="@color/colorBlack"-->
+        <!--            android:textSize="14dp />-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="@string/paytm_failure_reason_three"-->
+        <!--            android:layout_marginTop="@dimen/ten"-->
+        <!--            android:textColor="@color/colorBlack"-->
+        <!--            android:textSize="14dp />-->
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/twenty"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <ImageView
+            android:id="@+id/cross"
+            android:layout_width="24dp"
+            android:layout_height="18dp"
+
+            android:layout_marginTop="@dimen/ten"
+            android:layout_marginEnd="@dimen/twenty"
+            android:src="@drawable/ic_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <TextView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twenty"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cross"
+
+
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

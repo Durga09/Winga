@@ -1,0 +1,69 @@
+package in.eightfolds.winga.model;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+
+import java.io.Serializable;
+
+@JsonInclude(Include.NON_NULL)
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class AgeRange implements Serializable {
+
+    private Long ageRangeId;
+    private String title;
+    private boolean deleted;
+    private String createdTime;
+    private String modifiedTime;
+
+
+
+    public Long getAgeRangeId() {
+        return ageRangeId;
+    }
+
+    public void setAgeRangeId(Long ageRangeId) {
+        this.ageRangeId = ageRangeId;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public boolean isDeleted() {
+        return deleted;
+    }
+
+    public void setDeleted(boolean deleted) {
+        this.deleted = deleted;
+    }
+
+    public String getCreatedTime() {
+        return createdTime;
+    }
+
+    public void setCreatedTime(String createdTime) {
+        this.createdTime = createdTime;
+    }
+
+    public String getModifiedTime() {
+        return modifiedTime;
+    }
+
+    public void setModifiedTime(String modifiedTime) {
+        this.modifiedTime = modifiedTime;
+    }
+
+    @Override
+    public String toString() {
+        return "AgeRange [ageRangeId=" + ageRangeId + ", title=" + title
+                + ", deleted=" + deleted + ", createdTime=" + createdTime
+                + ", modifiedTime=" + modifiedTime + "]";
+    }
+
+
+}

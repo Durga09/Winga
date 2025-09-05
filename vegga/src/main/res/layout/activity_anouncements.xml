@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/mainLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adFragment"
+        android:background="@color/winga_bg_color"
+        android:orientation="vertical">
+
+        <include layout="@layout/headerlay" />
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/anouncementsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                tools:listitem="@layout/item_anouncement" />
+
+
+
+    </LinearLayout>
+
+
+
+    <fragment
+        android:id="@+id/adFragment"
+        android:name="in.eightfolds.winga.fragment.AdBannerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal" />
+
+</RelativeLayout>

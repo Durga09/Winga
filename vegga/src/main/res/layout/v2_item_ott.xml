@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemLL"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ott_item"
+    android:orientation="horizontal"
+    android:layout_marginEnd="@dimen/ten"
+    android:padding="@dimen/language_item_padding">
+
+
+
+
+    <TextView
+        android:id="@+id/itemTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/ten"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/five"
+        android:textColor="@color/colorWhite"
+        android:maxLines="1"
+        android:textSize="12dp"
+        tools:text="Telugu" />
+</LinearLayout>

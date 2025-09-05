@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/childLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ten"
+            android:src="@drawable/ic_back_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:text="Details"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="@dimen/eighteen"
+
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="@dimen/thirty"
+        app:layout_constraintTop_toBottomOf="@id/childLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+          <androidx.constraintlayout.widget.ConstraintLayout
+              android:id="@+id/cLL"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              android:background="@color/winga_bg_color"
+              android:layout_marginStart="@dimen/ten"
+              android:layout_marginTop="@dimen/twenty"
+              android:layout_marginEnd="@dimen/ten"
+              >
+
+              <com.smarteist.autoimageslider.SliderView
+                  android:id="@+id/imageSlider"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/ten"
+                  android:layout_marginTop="@dimen/twenty"
+                  android:layout_marginEnd="@dimen/ten"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:sliderAnimationDuration="600"
+                  app:sliderAutoCycleDirection="back_and_forth"
+                  app:sliderAutoCycleEnabled="true"
+                  app:sliderIndicatorAnimationDuration="600"
+                  app:sliderIndicatorGravity="center_horizontal|bottom"
+                  app:sliderIndicatorOrientation="horizontal"
+                  app:sliderIndicatorSelectedColor="#5A5A5A"
+                  app:sliderIndicatorUnselectedColor="#FFF"
+                  app:sliderScrollTimeInSec="1"
+                  android:visibility="gone"
+                  app:sliderStartAutoCycle="true" />
+
+              <com.makeramen.roundedimageview.RoundedImageView
+
+                  android:id="@+id/image"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:riv_corner_radius="10dp"
+                  app:riv_border_width="1dp"
+
+                  tools:src="@drawable/share_image"
+
+                  />
+          </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/discountPriceTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_marginTop="@dimen/twenty"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fifteen"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cLL"
+                tools:text="949" />
+
+            <TextView
+                android:id="@+id/actualPriceTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fifteen"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/quantum_grey"
+                android:textSize="@dimen/fifteen"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/discountPriceTv"
+                app:layout_constraintStart_toEndOf="@id/discountPriceTv"
+                app:layout_constraintTop_toTopOf="@id/discountPriceTv"
+                tools:text="1499" />
+
+            <TextView
+                android:id="@+id/discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ten"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/green_circle_color"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/actualPriceTv"
+                app:layout_constraintStart_toEndOf="@id/actualPriceTv"
+                app:layout_constraintTop_toTopOf="@id/actualPriceTv"
+                tools:text="33% off" />
+
+            <TextView
+                android:id="@+id/wingaCoinsTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_marginTop="@dimen/five"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/status_bar_color"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/discountPriceTv"
+                tools:text="Using W 500 coins"
+
+
+                />
+
+            <TextView
+                android:id="@+id/bannerTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_marginTop="@dimen/twenty"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fifteen"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/wingaCoinsTv"
+                tools:text="Shower Gel" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_marginTop="@dimen/twenty"
+                android:layout_marginEnd="@dimen/ten"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fifteen"
+                android:gravity="start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bannerTitle"
+                tools:text="This diversity means that it's not always easy to determine what  means when dividing your text into paragraphs. For example, you could have a one-topic paragraph describing Venus (with the next paragraph describing Mars) or a one-topic paragraph describing the hues of a sunset (with the next paragraph describing its reflection in the sea)." />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cLl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/description"
+                app:layout_constraintEnd_toEndOf="parent"
+                >
+                <TextView
+                    android:id="@+id/codeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="Code:"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fifteen"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textStyle="normal"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/redeemCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/five"
+                    android:fontFamily="@font/lato_regular"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fifteen"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/codeTv"
+                    app:layout_constraintStart_toEndOf="@id/codeTv"
+                    app:layout_constraintTop_toTopOf="@id/codeTv"
+                    tools:text="BHWR1248DEHA" />
+
+                <TextView
+                    android:id="@+id/copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="Copy"
+                    android:textColor="@color/red_color"
+                    android:textSize="@dimen/fifteen"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintBottom_toBottomOf="@id/redeemCode"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintStart_toEndOf="@id/redeemCode"
+                    app:layout_constraintTop_toTopOf="@id/redeemCode" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/gameTitle"
+                style="@style/yesterday_winners_btn_style"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="@dimen/twenty"
+                android:gravity="center"
+                android:text="Redeem"
+                android:textColor="@color/colorWhite"
+
+                android:textSize="15dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cLl" />
+
+            <TextView
+                android:id="@+id/termsConditionsLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ten"
+                android:fontFamily="@font/lato_regular"
+                android:text="Terms and Conditions"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fifteen"
+                android:layout_marginTop="@dimen/ten"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gameTitle"
+
+                />
+
+            <TextView
+                android:id="@+id/termsDescTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginEnd="@dimen/ten"
+                android:layout_marginBottom="@dimen/twenty"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fifteen"
+                android:gravity="start"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/termsConditionsLL"
+
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

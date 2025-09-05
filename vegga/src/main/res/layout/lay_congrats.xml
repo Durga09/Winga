@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/winga_bg_color">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/contentLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/exitTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/ten"
+        android:text="@string/exit"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+
+    <!--<include
+        layout="@layout/lay_win_one"/>
+
+    <include
+        layout="@layout/lay_win_two"/>
+
+    <include
+        layout="@layout/lay_win_three"/>
+
+    <include
+        layout="@layout/lay_win_four"/>
+
+    <include
+        layout="@layout/lay_win_eligible"/>-->
+
+
+    <RelativeLayout
+        android:id="@+id/playMoreRL"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/ninety"
+        android:background="@drawable/red_gradient_button_bg"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/play_more_games"
+            android:textColor="@color/colorWhite"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/sixty"
+            android:layout_height="@dimen/sixty"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/star" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topRL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/winga_bg_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adFragment"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/topLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <in.eightfolds.winga.utils.CustomImageView
+                    android:id="@+id/bgImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/loyalitypoints" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/bgImage"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/backIv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="@dimen/ten"
+                            android:padding="@dimen/ten"
+                            android:src="@drawable/ic_back_black" />
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/video_view_height"
+                            android:layout_height="@dimen/video_view_height"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/video_view_margin"
+                            android:layout_marginRight="@dimen/video_play_margin">
+
+                            <ImageView
+                                android:id="@+id/transferMoneyIv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/transfermoney" />
+
+                            <View
+                                android:id="@+id/startPlayerView"
+                                android:layout_width="5dp"
+                                android:layout_height="5dp"
+                                android:layout_centerInParent="true" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="@dimen/thirty">
+
+                            <TextView
+                                android:id="@+id/loyalityPointsDescTv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="100"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/loyality_points_text_size"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/lato_regular"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/total_loyalty_points"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/loyality_points_header_desc_size" />
+
+                            <TextView
+                                android:id="@+id/availablePointsTv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="100"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/loyality_points_second_text_size"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/lato_regular"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/available"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/loyality_points_header_desc_size" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:visibility="gone">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/loyaltyPointsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/fifteen"
+                android:paddingTop="@dimen/twenty"
+                android:paddingRight="@dimen/fifteen"
+                android:scrollbars="vertical"
+                tools:listitem="@layout/item_loyalty_points_history_lay" />
+
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/noItemsLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/adFragment"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/no_loyalty_points"
+            android:textColor="@color/no_history_color"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/lato_regular"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/play_more_games"
+            android:textColor="@color/no_history_color"
+            android:textSize="18dp"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/and_win_loyalty_points"
+            android:textColor="@color/no_history_color"
+            android:textSize="18dp"
+            android:visibility="visible" />
+
+        <in.eightfolds.winga.utils.CustomImageView
+            android:layout_width="@dimen/no_items_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/thirty"
+            android:layout_marginBottom="@dimen/thirty"
+            android:adjustViewBounds="true"
+            android:src="@drawable/no_loyaltypoints"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/adFragment"
+        android:name="in.eightfolds.winga.fragment.AdBannerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal" />
+
+</RelativeLayout>

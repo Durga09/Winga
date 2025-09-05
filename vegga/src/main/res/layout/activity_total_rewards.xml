@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topRL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/winnersbg"
+    tools:background="@color/winga_bg_color">
+
+    <LinearLayout
+        android:id="@+id/contentLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adBannerFragment"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <in.eightfolds.winga.utils.CustomImageView
+                android:id="@+id/bgImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/myhistory" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/backIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/forty"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:padding="@dimen/five"
+                    android:src="@drawable/ic_back_black" />
+
+
+                <TextView
+                    android:id="@+id/pointsTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/thirty"
+                    android:layout_marginTop="@dimen/title_margin"
+
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/loyality_points_text_size"
+                    android:textStyle="bold"
+                    tools:text="2000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/thirty"
+                    android:text="@string/total_rewards"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/successRedeemedTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/thirty"
+                    android:text="Rs. 100"
+                    android:layout_marginTop="@dimen/eight"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/thirty"
+                    android:text="@string/paid"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14dp" />
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/noItemsLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/no_gifts_cap"
+                android:textColor="@color/no_history_color"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/watch_more_videos_and"
+                android:textColor="@color/no_history_color"
+                android:textSize="16dp"
+                android:visibility="visible" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/win_exciting_giftspl"
+                android:textColor="@color/no_history_color"
+                android:textSize="16dp"
+                android:visibility="visible"
+                android:layout_marginBottom="2dp"/>
+
+            <in.eightfolds.winga.utils.CustomImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:src="@drawable/no_rewards"
+
+                />
+
+
+        </LinearLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:visibility="gone">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/historyRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_marginRight="@dimen/ten"
+                android:scrollbars="vertical" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    </LinearLayout>
+
+
+
+    <fragment
+        android:id="@+id/adBannerFragment"
+        android:name="in.eightfolds.winga.fragment.AdBannerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

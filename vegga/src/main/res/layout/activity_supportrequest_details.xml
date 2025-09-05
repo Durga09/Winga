@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/winga_bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/headerlay" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tokenTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="TKT000000000"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/twenty">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/message"
+                android:textSize="18dp"
+                android:layout_weight="70"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/messageTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Message Message Message Message Message"
+                android:textSize="16dp"
+                android:layout_weight="30"
+                android:textColor="@color/colorWhite"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/fifteen">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/status"
+                android:textSize="18dp"
+                android:layout_weight="70"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/statusTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Message Message Message Message Message"
+                android:textSize="16dp"
+                android:layout_weight="30"
+                android:textColor="@color/colorWhite"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/fifteen">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/remark"
+                android:textSize="18dp"
+                android:layout_weight="70"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/remarkTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Message Message Message Message Message"
+                android:textSize="16dp"
+                android:layout_weight="30"
+                android:textColor="@color/colorWhite"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

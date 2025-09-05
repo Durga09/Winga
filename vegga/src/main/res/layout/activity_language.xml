@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/winga_bg_color">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adRL"
+        android:paddingBottom="@dimen/ten">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="50">
+
+                <ImageView
+                    android:id="@+id/homeScreenIv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/languages_bg" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/five">
+
+                        <ImageView
+                            android:id="@+id/backIv"
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:padding="@dimen/three"
+                            android:src="@drawable/ic_back_black" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/twenty"
+                        android:paddingRight="@dimen/twenty"
+                        android:text="@string/view_your_app_in"
+                        android:textColor="@color/colorBlack"
+                        android:visibility="gone"
+                        android:textSize="18dp" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/languagesLL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="50"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/five"
+                android:paddingTop="@dimen/twenty">
+
+                <in.eightfolds.winga.utils.MyGridView
+                    android:id="@+id/languagesGridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:foregroundGravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:horizontalSpacing="@dimen/language_hor_spacing"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="@dimen/language_ver_spacing"
+
+                    tools:listitem="@layout/item_language" />
+
+                <Button
+                    android:id="@+id/chooseLangBtn"
+                    style="@style/red_gradient_btn_style"
+                    android:minWidth="@dimen/button_width"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="@dimen/twenty"
+                    android:paddingRight="@dimen/twenty"
+                    android:gravity="center"
+                    android:text="@string/to_continue_in_en" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/adRL"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/banner_height"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/five">
+
+        <fragment
+            android:id="@+id/adFragment"
+            android:name="in.eightfolds.winga.fragment.AdBannerFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/banner_height"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

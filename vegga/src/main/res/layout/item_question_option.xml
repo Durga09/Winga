@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/questionFl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/question_option_min_height"
+            android:background="@color/orangeYellow">
+
+
+            <LinearLayout
+                android:id="@+id/selectedLL"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:background="@color/transcolorBlack_ten"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/twenty"
+                android:paddingBottom="@dimen/twenty"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/twenty_five"
+                android:layout_marginRight="@dimen/twenty">
+
+                <TextView
+                    android:id="@+id/answerChoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center_vertical"
+                    android:foregroundGravity="center"
+
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18dp"
+                    android:layout_toLeftOf="@id/tickIv"
+                    tools:text="Edappadi K Palaniswami" />
+
+                <ImageView
+                    android:id="@+id/tickIv"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/green_tick"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <View
+            android:id="@+id/lineView"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/dark_gray_color"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/orTv"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="-20dp"
+            android:layout_marginTop="-20dp"
+            android:background="@drawable/black_filled_circle_bg"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/or_cap"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/orTv1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginBottom="-20dp"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/black_filled_circle_bg"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="@string/or_cap"
+        android:textColor="@color/colorWhite"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+</FrameLayout>

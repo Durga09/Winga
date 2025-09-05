@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonLL"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/fifty"
+            android:layout_weight="55"
+            android:foregroundGravity="center_vertical"
+
+            android:scaleType="fitCenter"
+            android:src="@drawable/transfer" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="45"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/logoIv"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_height="@dimen/voucher_button_dimen"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/five"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/paytm_logo" />
+
+                <TextView
+                    android:id="@+id/successTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/thirty"
+                    android:layout_marginRight="@dimen/thirty"
+                    android:gravity="center"
+                    android:text="@string/successful"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginBottom="@dimen/ten"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/descTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/thirty"
+                    android:layout_marginRight="@dimen/thirty"
+                    android:layout_marginTop="@dimen/five"
+                    android:gravity="center"
+                    android:text="@string/transferred_to_paytm"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/continueBtn"
+            style="@style/button_changemob_style"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/twenty"
+            android:background="@drawable/button_bg"
+            android:text="@string/continue_text"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/poweredByTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/yellow_header_color"
+            android:gravity="center"
+            android:paddingBottom="@dimen/eight"
+            android:paddingTop="@dimen/eight"
+            android:text="@string/powered_by"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

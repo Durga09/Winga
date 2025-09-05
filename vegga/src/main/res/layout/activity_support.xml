@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainRL">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adFragment"
+        android:background="@color/winga_bg_color"
+        android:orientation="vertical">
+
+        <include layout="@layout/headerlay" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/twenty"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/thirty"
+                    android:layout_marginRight="@dimen/thirty"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/contentSpinner"
+                        style="@style/spinner_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:backgroundTint="@color/address_hint_text_color"
+                        android:prompt="@string/select_content_type"
+                        android:spinnerMode="dialog" />
+
+                    <EditText
+                        android:id="@+id/writeCommentEt"
+                        style="@style/password_edit_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/fifteen"
+                        android:gravity="top"
+                        android:hint="@string/write_comment"
+                        android:digits="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz ,.@!_-+x()"
+                        android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+                        android:maxLength="200"
+                        android:lines="3"/>
+
+                    <TextView
+                        android:id="@+id/commentLetterCountTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="0/200"
+                        android:layout_marginRight="2dp"
+                        android:textColor="@color/colorWhite" />
+
+
+                    <Button
+                        android:id="@+id/sendBtn"
+                        style="@style/button_style"
+                        android:layout_width="@dimen/support_button_width"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/fifteen"
+                        android:text="@string/send"
+                        android:textColor="@color/colorWhite" />
+
+                    <LinearLayout
+                        android:id="@+id/emailLL"
+                        android:layout_width="@dimen/support_button_width"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_marginTop="@dimen/fifteen"
+                        android:layout_gravity="center"
+                        android:background="@drawable/white_btn_select_bg"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:foregroundGravity="center_horizontal"
+                                android:src="@drawable/email_customer_select_icon" />
+
+                            <TextView
+                                android:id="@+id/emailTv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/ten"
+                                android:foregroundGravity="center_horizontal"
+                                android:textColor="@drawable/call_customer_select_text"
+                                android:textSize="18dp"
+                                tools:text="winga@veggaappsol.com" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/contactCustomerCareLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/twenty_five"
+                        android:background="@drawable/white_btn_select_bg"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="@dimen/ten"
+                        android:paddingLeft="@dimen/fifteen"
+                        android:paddingRight="@dimen/fifteen"
+                        android:paddingTop="@dimen/ten"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:foregroundGravity="center_horizontal"
+                                android:src="@drawable/call_customer_select_icon" />
+
+                            <TextView
+                                android:id="@+id/customerNumTv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/ten"
+                                android:foregroundGravity="center_horizontal"
+                                android:textColor="@drawable/call_customer_select_text"
+                                android:textSize="18dp"
+                                tools:text="040-23608899" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/historyLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/twenty_five"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/support_history_strip_color">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/ten"
+                            android:foregroundGravity="center"
+                            android:gravity="center_vertical"
+                            android:text="@string/history"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/ticketsCounttv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/ten"
+                            android:foregroundGravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="12dp"
+                            tools:text="All(3)"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/ticketsHistoryRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:layout_marginRight="@dimen/fifteen"
+                        android:paddingBottom="@dimen/fifteen"
+                        android:layout_marginTop="@dimen/ten"
+                        android:scrollbars="none"
+
+                        tools:listitem="@layout/item_support_ticket" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/adFragment"
+        android:name="in.eightfolds.winga.fragment.AdBannerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal" />
+
+
+</RelativeLayout>

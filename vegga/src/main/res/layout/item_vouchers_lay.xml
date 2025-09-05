@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/winga_bg_color"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/mainRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/imageLL"
+            android:layout_width="@dimen/voucher_iv_dimen"
+            android:layout_height="@dimen/voucher_iv_dimen"
+            android:layout_weight="70">
+
+            <ImageView
+                android:id="@+id/voucherIv"
+                android:layout_width="@dimen/voucher_iv_dimen"
+                android:layout_height="@dimen/voucher_iv_dimen"
+                android:scaleType="centerInside"
+                android:src="@drawable/voucher_default" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageLL"
+            android:layout_weight="30"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/voucherCodeTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dp"
+                    android:layout_toLeftOf="@+id/infoIv"
+                    android:lines="1"
+                    android:paddingBottom="2dp"
+                    android:textColor="@color/address_hint_text_color"
+                    android:textSize="12dp"
+                    tools:text="Gift Code #12345678989" />
+
+
+                <ImageButton
+                    android:id="@+id/infoIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/voucher_info_bg"
+                    android:padding="10dp" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/voucherNameTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textSize="14dp"
+                tools:text=" Flipkart voucher" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/voucherPointsIv"
+                            android:layout_width="15dp"
+                            android:layout_height="18dp"
+                            android:gravity="center_vertical"
+                            android:src="@drawable/points" />
+
+                        <TextView
+                            android:id="@+id/voucherPointsTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@id/voucherPointsIv"
+                            android:lines="1"
+                            android:textColor="@color/vegga_yellow"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            tools:text="1500" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/voucherRupeesTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:lines="1"
+                        android:textColor="@color/address_hint_text_color"
+                        android:textSize="12dp"
+                        tools:text="Rs 200" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginRight="2dp">
+
+                    <Button
+                        android:id="@+id/voucherAddBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="@drawable/red_gradient_button_bg"
+                        android:minWidth="45dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="@string/add"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14dp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/voucherAddRemoveLay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <ImageButton
+                            android:id="@+id/voucherRemoveIv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/voucher_remove_bg"
+                            android:padding="15dp" />
+
+
+                        <TextView
+                            android:id="@+id/voucherCountTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:textColor="@color/app_theme_red"
+                            android:textSize="16dp"
+                            tools:text="1" />
+
+                        <ImageButton
+                            android:id="@+id/voucherAddIv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/voucher_add_bg"
+                            android:padding="15dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/bottomLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/mainRL"
+        android:layout_alignParentBottom="true"
+        android:background="#474B58"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp" />
+</RelativeLayout>

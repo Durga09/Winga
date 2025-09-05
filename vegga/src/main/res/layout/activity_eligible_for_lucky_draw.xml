@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/winga_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/congratesRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+
+        <ImageView
+        android:id="@+id/playMoreGifIv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/win_top_one" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/hundred">
+
+            <ImageView
+                android:src="@drawable/win_center_one"
+                android:layout_width="match_parent"
+                android:layout_height="170dp" />
+        <TextView
+            android:id="@+id/congratsDescTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            tools:text="Congratulations /n You have won 6 ames so far. keep playing more games to increate your chance of winnin and earning more points"
+            android:layout_marginLeft="@dimen/twenty_five"
+            android:layout_marginRight="@dimen/twenty_five"
+            android:layout_marginTop="@dimen/twenty_two"
+            android:textColor="@color/colorWhite"
+            android:paddingTop="@dimen/twenty"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/lato_regular"
+            />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/playMoreGamesRL1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty"
+            android:layout_marginLeft="@dimen/eighty"
+            android:layout_marginRight="@dimen/eighty"
+            android:layout_marginTop="@dimen/hundred"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/fifty"
+            android:background="@drawable/red_gradient_button_bg"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/play_more_games"
+
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lato_regular"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/sixty"
+                android:layout_height="@dimen/sixty"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/star" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/exitTv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/ten"
+            android:text="@string/exit"
+            android:textColor="@color/colorWhite"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/lato_regular"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/congratsRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/congratsTopRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+            <ImageView
+                android:id="@+id/congratsTopIv"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+
+                android:layout_gravity="top"
+                android:scaleType="fitXY"
+                android:src="@drawable/win_top_one" />
+
+            <TextView
+                android:id="@+id/congratsExitTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/ten"
+                android:text="@string/exit"
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lato_regular"
+                />
+
+            <ImageView
+                android:id="@+id/congratsCenterIv"
+                android:layout_width="match_parent"
+                android:layout_marginTop="50dp"
+                android:layout_height="170dp"
+                android:src="@drawable/win_center_one"
+                android:scaleType="fitCenter"/>
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="120dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/congratsCenterDescTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/lato_regular"
+                tools:text="Congratulations /n You have won 6 ames so far. keep playing more games to increate your chance of winnin and earning more points"
+                android:layout_marginLeft="@dimen/twenty_five"
+                android:layout_marginRight="@dimen/twenty_five"
+                android:textColor="@color/colorWhite"
+                android:paddingTop="@dimen/twenty_five"
+                android:layout_gravity="center"
+                android:textSize="16dp" />
+
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            <ImageView
+                android:id="@+id/congratsBottomIv"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/win_bottom_one" />
+
+            <RelativeLayout
+                android:id="@+id/congratsPlayMoreRL"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty"
+                android:layout_marginLeft="@dimen/eighty"
+                android:layout_marginRight="@dimen/eighty"
+                android:layout_centerInParent="true"
+                android:background="@drawable/red_gradient_button_bg"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/play_more_games"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/lato_regular"/>
+
+                <ImageView
+                    android:layout_width="@dimen/sixty"
+                    android:layout_height="@dimen/sixty"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/star" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/elegibleLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="45">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/menubg" />
+
+
+            <ImageView
+                android:id="@+id/qualityGifIv"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/qualify" />
+
+            <TextView
+                android:id="@+id/exitTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/ten"
+                android:text="@string/exit"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lato_regular"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="55">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/thirty"
+                    android:layout_marginRight="@dimen/thirty"
+                    android:gravity="center"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="@string/congratulations"
+                    android:textColor="@color/app_theme_red"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/elegibleTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/thirty"
+                    android:layout_marginRight="@dimen/thirty"
+                    android:layout_marginTop="@dimen/ten"
+                    android:gravity="center"
+                    android:text="@string/elegible_lucky_draw"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+
+
+                <RelativeLayout
+                    android:id="@+id/playMoreGamesRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty"
+                    android:layout_marginLeft="@dimen/eighty"
+                    android:layout_marginRight="@dimen/eighty"
+                    android:layout_marginTop="@dimen/thirty"
+                    android:background="@drawable/red_gradient_button_bg"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="@string/play_more_games"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="@dimen/sixty"
+                        android:layout_height="@dimen/sixty"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/star" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/winga_bg_color"
+    android:orientation="vertical"
+    android:padding="@dimen/five">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/winnerIv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_user_filled"
+            app:civ_border_color="@color/colorWhite"
+            app:civ_border_width="1dp"
+            android:layout_marginRight="@dimen/ten"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/notificationLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/ten"
+                android:layout_toLeftOf="@+id/prizeTv"
+                android:layout_centerVertical="true"
+                android:foregroundGravity="center_vertical">
+
+
+                <TextView
+                    android:id="@+id/nameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/address_text_color"
+                    android:textSize="16dp"
+                    android:lines="1"
+                    tools:text="Sagar Rapolu" />
+
+
+                <TextView
+                    android:id="@+id/stateTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/address_text_color"
+                    android:layout_marginTop="2dp"
+                    android:textSize="12dp"
+                    tools:text="Telangana" />
+
+                <TextView
+                    android:id="@+id/dateTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/five"
+                    android:textColor="@color/address_text_color"
+                    android:textSize="12dp"
+                    android:visibility="gone"
+                    tools:text="30 aug 2018, 03:20PM" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/prizeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingRight="@dimen/fifteen"
+                android:textColor="@color/prize_green_color"
+                android:textSize="14dp"
+                tools:text="Won Pendrive " />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="@color/gray_color"
+        android:paddingBottom="@dimen/three"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="@dimen/ten"
+        android:visibility="visible" />
+
+</LinearLayout>

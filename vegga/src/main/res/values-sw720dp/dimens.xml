@@ -1,0 +1,94 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+
+
+    <dimen name="thirty">40dp</dimen>
+    <dimen name="thirty_five">43dp</dimen>
+    <dimen name="fifty">60dp</dimen>
+
+
+    <dimen name="fifteen">23dp</dimen>
+    <dimen name="twenty_five">34dp</dimen>
+
+    <dimen name="hundred">140dp</dimen>
+
+
+    <dimen name="video_play_margin">60dp</dimen>
+    <dimen name="video_view_height">100dp</dimen>
+    <dimen name="video_view_margin">50dp</dimen>
+
+    <dimen name="question_option_min_height">100dp</dimen>
+    <dimen name="banner_height">65dp</dimen>
+    <dimen name="question_next_btn_height">90dp</dimen>
+
+    <dimen name="title_margin">30dp</dimen>
+    <dimen name="scratch_card_width">400dp</dimen>
+    <dimen name="scratch_card_height">120dp</dimen>
+
+    <dimen name="result_tick_width">130dp</dimen>
+
+
+    <dimen name="profile_tab_width">180dp</dimen>
+    <dimen name="profile_tab_height">70dp</dimen>
+    <dimen name="play_icon_width">290dp</dimen>
+    <dimen name="play_icon_height">120dp</dimen>
+
+    <dimen name="button_height">60dp</dimen>
+    <dimen name="button_width">400dp</dimen>
+    <dimen name="support_button_width">400dp</dimen>
+
+    <dimen name="winga_logo_height">100dp</dimen>
+
+    <dimen name="yellow_header_height">70dp</dimen>
+    <dimen name="tutorial_bottomMargin">150dp</dimen>
+
+    <dimen name="home_middle_margin">20dp</dimen>
+    <dimen name="special_session_ic_width">150dp</dimen>
+    <dimen name="special_session_ic_height">120dp</dimen>
+    <dimen name="special_session_ic_margin_right">30dp</dimen>
+    <dimen name="pop_up_margin">80dp</dimen>
+    <dimen name="success_ic_dimen">300dp</dimen>
+
+    <dimen name="splash_logo_width">120dp</dimen>
+    <dimen name="splash_flip_iv_height">130dp</dimen>
+    <dimen name="language_hor_spacing">25dp</dimen>
+    <dimen name="language_ver_spacing">20dp</dimen>
+
+
+    <dimen name="login_field_height">75dp</dimen>
+
+    <dimen name="language_item_padding">15dp</dimen>
+
+    <dimen name="login_header_padding_bottom">25dp</dimen>
+    <dimen name="login_header_padding_top">18dp</dimen>
+
+    <dimen name="register_edittext_padding">10dp</dimen>
+
+    <dimen name="home_profile_pic_dimen">50dp</dimen>
+    <dimen name="home_left_right_margin">60dp</dimen>
+
+    <dimen name="reward_item_dimen">200dp</dimen>
+    <dimen name="reward_item_open_dimen">280dp</dimen>
+
+    <dimen name="winners_me_ic_dimen">90dp</dimen>
+    <dimen name="winners_ic_dimen">70dp</dimen>
+
+    <dimen name="profile_top_height">200dp</dimen>
+    <dimen name="profile_ic_dimen" >140dp</dimen>
+    <dimen name="circle_progress_dimen">150dp</dimen>
+
+    <dimen name="no_items_width">400dp</dimen>
+
+    <dimen name="header_height">320dp</dimen>
+    <dimen name="profile_middle_view_height" >250dp</dimen>
+
+    <dimen name="voucher_iv_dimen">100dp</dimen>
+    <dimen name="voucher_button_dimen">75dp</dimen>
+
+    <dimen name="not_live_screen_logo_height">100dp</dimen>
+    <dimen name="not_live_screen_share_code_margin">80dp</dimen>
+    <dimen name="not_live_screen_top_margin">100dp</dimen>
+
+</resources>

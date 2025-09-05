@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/topLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/winga_bg_color">
+
+        <include layout="@layout/headerlay" />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/addressRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginTop="@dimen/ten"
+            tools:listitem="@layout/address_item_lay"
+            tools:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/noItemsLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_above="@id/adFragment">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/no_addresses"
+            android:textColor="@color/no_history_color"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/lato_regular"
+            android:visibility="visible" />
+
+        <in.eightfolds.winga.utils.CustomImageView
+            android:layout_width="@dimen/no_items_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/thirty"
+            android:layout_marginBottom="@dimen/thirty"
+            android:adjustViewBounds="true"
+            android:src="@drawable/location"
+
+            />
+
+        <TextView
+            android:id="@+id/addAddressTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten"
+            android:gravity="center"
+            android:text="@string/add_address"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/adFragment"
+        android:name="in.eightfolds.winga.fragment.AdBannerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal" />
+</RelativeLayout>

@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "555529204328",
+    "firebase_url": "https://wingastaging.firebaseio.com",
+    "project_id": "wingastaging",
+    "storage_bucket": "wingastaging.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555529204328:android:5393c1d16f7d53b2",
+        "android_client_info": {
+          "package_name": "in.eightfolds.winga.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555529204328-7gmeq5t4ek5sq5k13uca3j7j4u0im2un.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.eightfolds.winga.staging",
+            "certificate_hash": "d4fb7a21cee6fe8078e4598b027c9f7b3f12f872"
+          }
+        },
+        {
+          "client_id": "555529204328-glg75ri4g69r3g2r2vt1g296u2563djd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7-629HIFSUIu2TEcB67F9j1Qx5lxqZ7o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "555529204328-glg75ri4g69r3g2r2vt1g296u2563djd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "555529204328-p8hc9sq2j83bgifddvf7t0l4lmq2i3nm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "in.eightfolds.WinGaStaging",
+                "app_store_id": "1424931697"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

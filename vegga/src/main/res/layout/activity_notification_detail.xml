@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/winga_bg_color"
+        android:layout_above="@+id/adFragment"
+        android:paddingBottom="@dimen/fifteen"
+        android:orientation="vertical">
+
+        <include layout="@layout/headerlay" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/fifteen">
+
+                    <TextView
+                        android:id="@+id/notificationTitleTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="vertical"
+                        android:textColor="@color/address_hint_text_color"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        tools:text="This is a notification Title." />
+
+
+                    <TextView
+                        android:id="@+id/notificationDateTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="vertical"
+                        android:textColor="@color/address_hint_text_color"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        tools:text="Aug 20, at 4:15" />
+
+                    <TextView
+                        android:id="@+id/notificationDescTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ten"
+                        android:maxLines="100"
+                        android:scrollbars="vertical"
+                        android:textColor="@color/address_hint_text_color"
+                        android:textSize="16dp"
+                        android:visibility="visible"
+                        tools:text="This is a notification description.This is a notification description.This is a notification description.This is a notification description.This is a notification description.This is a notification description.This is a notification description.This is a notification description.This is a notification description.This is a notification description.This is a notification description.This is a notification description.This is a notification description" />
+
+                    <ImageView
+                        android:id="@+id/notificationIv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/twenty"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/share_image" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+    <fragment
+        android:id="@+id/adFragment"
+        android:name="in.eightfolds.winga.fragment.AdBannerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal" />
+
+</RelativeLayout>

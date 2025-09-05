@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/elegibleLL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/winga_bg_color"
+    android:orientation="vertical"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <in.eightfolds.winga.utils.CustomImageView
+            android:id="@+id/bgImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/eligible_topbg" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/menubg"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/qualityGifIv"
+            android:layout_width="@dimen/success_ic_dimen"
+            android:layout_height="@dimen/success_ic_dimen"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/qualify" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/forty"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/thirty"
+                android:layout_marginRight="@dimen/thirty"
+                android:gravity="center"
+                android:text="@string/congratulations"
+                android:textColor="@color/app_theme_red"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/elegibleDescTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/thirty"
+                android:layout_marginTop="@dimen/title_margin"
+                android:layout_marginRight="@dimen/thirty"
+                android:gravity="center"
+                android:text="@string/elegible_lucky_draw"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+            <RelativeLayout
+                android:id="@+id/eligiblePlayMoreGamesRL"
+                android:layout_width="250dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginTop="@dimen/thirty"
+                android:background="@drawable/red_gradient_button_bg"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/play_more_games"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="@dimen/sixty"
+                    android:layout_height="@dimen/sixty"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/star" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

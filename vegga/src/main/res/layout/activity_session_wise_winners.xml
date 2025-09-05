@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/mainLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/winga_bg_color"
+        android:orientation="vertical"
+        android:layout_above="@+id/adFragment">
+
+        <include layout="@layout/headerlay" />
+
+        <TextView
+            android:id="@+id/selectedDateTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleTv"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:layout_marginTop="@dimen/twenty"
+            android:gravity="center_vertical"
+            android:textColor="@color/yellow_header_color"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            tools:text="13th April, 2018" />
+
+
+
+        <TextView
+            android:id="@+id/noWinnersTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/hundred"
+            android:gravity="center"
+            android:text="@string/no_winners"
+            android:textColor="@color/no_history_color"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/ten">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/winnersRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                tools:listitem="@layout/item_winner" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/adFragment"
+        android:name="in.eightfolds.winga.fragment.AdBannerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal" />
+
+</RelativeLayout>

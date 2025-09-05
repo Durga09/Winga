@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:padding="@dimen/fifteen"
+    android:id="@+id/filterItemLL">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/filterItemTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pending"
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/selectIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_unchecked"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

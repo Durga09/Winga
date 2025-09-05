@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/ten"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eight"
+            android:gravity="center_horizontal"
+            android:text="@string/upload_photo_from"
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:id="@+id/cameraLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten"
+            android:background="@drawable/rectangle_blue_button"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/ten"
+                android:text="@string/update_from_camera"
+                android:textColor="@color/app_theme_red"
+                android:textSize="@dimen/fifteen" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/galleryLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten"
+            android:background="@drawable/rectangle_blue_button"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/ten"
+                android:text="@string/upload_from_gallery"
+                android:textColor="@color/app_theme_red"
+                android:textSize="@dimen/fifteen" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/removePhotoLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten"
+            android:background="@drawable/rectangle_blue_button"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/ten"
+                android:text="@string/remove_photo"
+                android:textColor="@color/app_theme_red"
+                android:textSize="@dimen/fifteen" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

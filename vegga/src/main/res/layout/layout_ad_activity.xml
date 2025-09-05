@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.eightfolds.reveal.RevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reveal_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+
+
+    <RelativeLayout
+        android:id="@+id/mainRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transcolorBlack_eighty">
+
+
+        <ImageView
+            android:id="@+id/questionIv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            tools:src="@drawable/share_image" />
+
+        <LinearLayout
+            android:id="@+id/processingLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transcolorBlack_eighty"
+            android:gravity="center"
+            android:visibility="visible">
+
+
+            <in.eightfolds.circleprogress.CircleProgress
+                android:id="@+id/circle_progress"
+                android:layout_width="@dimen/circle_progress_dimen"
+                android:layout_height="@dimen/circle_progress_dimen"
+                android:layout_gravity="center"
+                custom:circle_progress="20" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timeCounterLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/timeCounterTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transcolorBlack_eighty"
+                android:padding="5dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp"
+                tools:text="@string/game_starts_in_sec" />
+
+            <ImageView
+                android:id="@+id/closeVideoIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="5dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_cancel"
+                android:visibility="invisible" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp">
+
+
+                <FrameLayout
+                    android:id="@+id/youtube_fragment"
+                    android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/yellow_header_color"
+                    android:visibility="gone" />
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/videoProgressLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/three"
+                android:layout_marginRight="@dimen/three"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/currentVideoProgressTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp"
+                        tools:text="5:30" />
+
+                    <TextView
+                        android:id="@+id/totalVideoDurationTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp"
+                        tools:text="10:00" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/shopNowLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/twenty_five"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/buynowBT"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/shop_now" />
+
+                <TextView
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:gravity="center"
+                    android:text="@string/view_more"
+                    android:textColor="@color/transparent_colorWhite"
+                    android:textSize="@dimen/fifteen" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</in.eightfolds.reveal.RevealLayout>

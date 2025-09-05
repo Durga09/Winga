@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.eightfolds.reveal.RevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reveal_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+
+
+    <RelativeLayout
+        android:id="@+id/mainRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transcolorBlack_eighty">
+
+
+        <ImageView
+            android:id="@+id/questionIv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            tools:src="@drawable/share_image" />
+
+        <ImageView
+            android:id="@+id/shareIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="70dp"
+            android:padding="@dimen/ten"
+            android:visibility="gone"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_share" />
+
+        <ImageView
+            android:id="@+id/backVideoIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/ten"
+            android:src="@drawable/ic_back_white" />
+
+
+        <ImageView
+            android:id="@+id/closeVideoIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/ten"
+            android:src="@drawable/ic_cancel" />
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:id="@+id/frameLay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+
+                <FrameLayout
+                    android:id="@+id/youtube_fragment"
+                    android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:background="@color/yellow_header_color"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/replayMainLay"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@drawable/replay_video_bg"
+                    android:gravity="center"
+                    android:backgroundTint="@color/yellow_hint_color"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/replayLL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            app:tint="@color/colorBlack"
+                            android:src="@drawable/ic_replay_selector" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/eight"
+
+                            android:text="@string/tap_to_replay_video"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:id="@+id/videoProgressLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/three"
+                android:layout_marginRight="@dimen/three"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <ProgressBar
+                    android:id="@+id/videoDurationProgressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:indeterminateTint="@color/yellow_header_color"
+                    android:indeterminateTintMode="src_atop"
+                    android:max="100"
+                    android:minHeight="10dp"
+                    android:progressBackgroundTint="@color/yellow_header_color"
+                    android:progressTint="@color/yellow_header_color"
+                    android:visibility="invisible"
+                    tools:progress="30"
+
+                    />
+
+                <LinearLayout
+                    android:id="@+id/processingLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transcolorBlack_eighty"
+                    android:gravity="center"
+                    android:visibility="visible">
+
+
+                    <in.eightfolds.circleprogress.CircleProgress
+                        android:id="@+id/circle_progress"
+                        android:layout_width="@dimen/circle_progress_dimen"
+                        android:layout_height="@dimen/circle_progress_dimen"
+                        android:layout_gravity="center"
+                        custom:circle_progress="20" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/currentVideoProgressTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp"
+                        tools:text="5:30" />
+
+
+                    <TextView
+                        android:id="@+id/totalVideoDurationTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp"
+                        tools:text="10:00" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/showTaskLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/showBt"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/shop_now" />
+
+                <TextView
+                    android:id="@+id/showTitle"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:gravity="center"
+                    android:text="@string/show_task"
+                    android:textColor="@color/transparent_colorWhite"
+                    android:textSize="@dimen/fifteen" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/twenty"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="After completing the task click on below button to claim Rs. 30"
+                />
+
+            <LinearLayout
+                android:id="@+id/iamReadyLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginRight="@dimen/fifteen"
+                android:layout_marginBottom="@dimen/ten"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <Button
+                    android:id="@+id/askQstnBtn"
+                    style="@style/yesterday_winners_btn_style"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/fifteen"
+                    android:layout_marginBottom="@dimen/ten"
+                    android:text="@string/askquestions"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/shopNowLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/buynowBT"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/shop_now" />
+
+                <TextView
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:gravity="center"
+                    android:text="@string/shop_now"
+                    android:textColor="@color/transparent_colorWhite"
+                    android:textSize="@dimen/fifteen" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/adBannerLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/ten">
+
+                <fragment
+                    android:id="@+id/adBannerFragment"
+                    android:name="in.eightfolds.winga.fragment.AdBannerFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/banner_height" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</in.eightfolds.reveal.RevealLayout>

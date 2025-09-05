@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:background="@color/winga_bg_color">
+
+   <!-- <in.eightfolds.winga.utils.CustomImageView
+        android:id="@+id/bgIV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/tutorial_a" />
+
+    <in.eightfolds.winga.utils.CustomImageView
+        android:id="@+id/zoomInbgIV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/tutorial_aa" />
+
+
+-->
+
+
+        <ImageView
+            android:id="@+id/bgIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/tutorial_a" />
+
+    <ImageView
+        android:id="@+id/zoomInbgIV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        tools:src="@drawable/tutorial_aa"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/descTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorWhite"
+        android:textSize="18dp"
+        android:paddingBottom="@dimen/tutorial_bottomMargin"
+        android:paddingLeft="@dimen/fifteen"
+        android:paddingRight="@dimen/fifteen"
+        tools:text="Watch Videos" />
+</RelativeLayout>
+

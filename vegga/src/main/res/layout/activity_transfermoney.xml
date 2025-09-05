@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/winga_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty"
+        android:layout_toLeftOf="@+id/searchIv"
+        android:layout_toStartOf="@+id/searchIv"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backIv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/ten"
+            android:padding="@dimen/five"
+            android:src="@drawable/ic_back_white" />
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/ten"
+            android:text="@string/money_transfer"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/thirty"
+        android:layout_marginRight="@dimen/thirty">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fifty"
+                android:layout_marginRight="@dimen/fifty"
+                android:layout_marginTop="@dimen/twenty_two"
+                android:gravity="center"
+                android:text="@string/transfer_to_payttm"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/mobET"
+                style="@style/defaultEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/forty"
+
+                android:hint="@string/mobile_num" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/forty"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enable_transfer"
+                android:textColor="@color/app_theme_red"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_two"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_correct" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/paytm_wallet"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/allows_to_add_beneficiary"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/transferMoneyBtn"
+                style="@style/red_gradient_btn_style"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/forty"
+                android:text="@string/transfer_money" />
+
+            <Button
+                android:id="@+id/doItLater"
+                style="@style/button_changemob_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty_five"
+                android:layout_marginTop="@dimen/fifteen"
+                android:paddingBottom="@dimen/ten"
+                android:layout_marginLeft="@dimen/twenty_five"
+                android:layout_marginRight="@dimen/twenty_five"
+                android:paddingLeft="@dimen/fifteen"
+                android:paddingRight="@dimen/fifteen"
+                android:paddingTop="@dimen/ten"
+                android:text="@string/do_it_later"
+                android:textColor="@color/changemob_txt_color" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

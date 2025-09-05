@@ -1,0 +1,103 @@
+{
+  "project_info": {
+    "project_number": "445900972911",
+    "firebase_url": "https://winga-203606.firebaseio.com",
+    "project_id": "winga-203606",
+    "storage_bucket": "winga-203606.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445900972911:android:90c3f9685b80f823",
+        "android_client_info": {
+          "package_name": "in.eightfolds.winga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "445900972911-ucm9t038t8rttjgcim2n5io70e9fhobt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.eightfolds.winga",
+            "certificate_hash": "d4fb7a21cee6fe8078e4598b027c9f7b3f12f872"
+          }
+        },
+        {
+          "client_id": "445900972911-g76f7bpkdr4g5fel3d1pp8i0a1049856.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.eightfolds.winga",
+            "certificate_hash": "bf57136a144be487c832f2dc61c4f25c85c07ae9"
+          }
+        },
+        {
+          "client_id": "445900972911-5rogr9bko34fhj0j3m5m0s2bavuifb21.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.eightfolds.winga",
+            "certificate_hash": "b893b2cc46691bb7005d5a9b583810536ae3d690"
+          }
+        },
+        {
+          "client_id": "445900972911-ujrig3q6b645e3aio6kbml3i2aq2paae.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.eightfolds.winga",
+            "certificate_hash": "e7e89ebadc17f0b4dcafbbf009f5fbf8b79cb1c1"
+          }
+        },
+        {
+          "client_id": "445900972911-rdidcb5qv5gn9esftc3l8ddvccea69e7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.eightfolds.winga",
+            "certificate_hash": "db2aaf0f6d1e3f1c2750f9ee6dc490990d97b82c"
+          }
+        },
+        {
+          "client_id": "445900972911-b9fudleb9148caug7gpvv2mhchrunl9f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.eightfolds.winga",
+            "certificate_hash": "a1febe3106f7aa3e1d10d7d3ebed6f5ebb90fda7"
+          }
+        },
+        {
+          "client_id": "445900972911-5bva3k952cnqt68atnpsj6kujurkr6ll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKAeQUeSwrdT4Fxc6QBfysJGrS1bGWQKM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445900972911-5bva3k952cnqt68atnpsj6kujurkr6ll.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "445900972911-k7gjbo24n0om7tev9lqtp3ejvl7mm5is.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "in.eightfolds.WinGaLive",
+                "app_store_id": "1424931697"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

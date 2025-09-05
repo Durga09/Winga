@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/winnerIv"
+        android:layout_width="@dimen/winners_ic_dimen"
+        android:layout_height="@dimen/winners_ic_dimen"
+        android:src="@drawable/ic_user_filled"
+        app:civ_border_color="@color/colorWhite"
+        app:civ_border_width="1dp"/>
+
+    <LinearLayout
+        android:id="@+id/winnerCountLL"
+        android:layout_width="@dimen/winners_ic_dimen"
+        android:layout_height="@dimen/winners_ic_dimen"
+        android:layout_marginLeft="-0dp"
+        android:background="@drawable/white_filled_circle"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/winnersCountTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"
+            tools:text="491" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/users"
+            android:visibility="gone"
+            android:textColor="@color/colorBlack" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

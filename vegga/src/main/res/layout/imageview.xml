@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/winga_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/headerRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/closeIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/ten"
+            android:src="@drawable/ic_back_white" />
+
+
+        <ImageView
+            android:id="@+id/editIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/ten"
+            android:src="@drawable/ic_edit_white"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerRL"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/cropRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:layout_marginRight="@dimen/fifteen"
+            android:layout_marginTop="@dimen/twenty"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <TextView
+                android:id="@+id/submitTV"
+                android:layout_width="@dimen/one_fifty"
+                android:layout_height="@dimen/forty"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/ten"
+                android:background="@drawable/button_bg"
+                android:gravity="center"
+                android:text="Submit"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/fifteen"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/cropTV"
+                style="@style/red_gradient_btn_style"
+                android:layout_width="@dimen/one_fifty"
+                android:layout_height="@dimen/forty"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/ten"
+                android:gravity="center"
+                android:text="Crop"
+                android:textSize="@dimen/fifteen" />
+        </RelativeLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

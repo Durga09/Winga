@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg" />
+
+
+    <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+           >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="45"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="55"
+                android:background="@color/header_text_color"/>
+
+        </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="45"
+            android:paddingBottom="@dimen/ten"
+            android:paddingLeft="@dimen/thirty"
+            android:paddingRight="@dimen/thirty"
+            android:paddingTop="@dimen/thirty"
+            android:src="@drawable/win" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="55"
+            android:background="@color/winga_bg_color">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <in.eightfolds.winga.utils.AirstreamRegularTextView
+                    android:id="@+id/pointsWonTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/thirty"
+                    android:layout_marginRight="@dimen/thirty"
+                    android:gravity="center"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="@string/you_have_won_rupees"
+                    android:textColor="@color/app_theme_red"
+                    android:textSize="28dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pointRupeeTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/thirty"
+                    android:layout_marginRight="@dimen/thirty"
+                    android:layout_marginTop="@dimen/twenty"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    tools:text="@string/point_rupee"
+                    android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:id="@+id/redeemPointsRL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/forty_five"
+                    android:layout_marginLeft="@dimen/eighty"
+                    android:layout_marginRight="@dimen/eighty"
+                    android:layout_marginTop="@dimen/twenty_five"
+                    android:background="@drawable/button_bg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center"
+                        android:text="@string/redeem"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/star" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/skipBtn"
+                    style="@style/button_changemob_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/forty_five"
+                    android:layout_marginTop="@dimen/fifteen"
+                    android:paddingBottom="@dimen/ten"
+                    android:layout_marginLeft="@dimen/eighty"
+                    android:layout_marginRight="@dimen/eighty"
+                    android:paddingLeft="@dimen/fifteen"
+                    android:fontFamily="@font/lato_regular"
+                    android:paddingRight="@dimen/fifteen"
+                    android:paddingTop="@dimen/ten"
+                    android:text="@string/continue_text"
+                    android:textStyle="bold"
+                    android:textColor="@color/changemob_txt_color" />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/redeemPointsLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transcolorBlack"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/ten"
+                android:text="@string/redeem"
+                android:textColor="@color/colorBlack"
+                android:textSize="22dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/redeem_options_color"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/paytmLL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:orientation="vertical"
+                    android:padding="@dimen/fifteen">
+
+                    <ImageView
+                        android:layout_width="@dimen/sixty"
+                        android:layout_height="@dimen/sixty"
+                        android:src="@drawable/paytm" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/five"
+                        android:gravity="center"
+                        android:text="@string/paytm"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

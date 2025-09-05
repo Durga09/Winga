@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/childLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/twenty"
+            android:src="@drawable/ic_back_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spin &amp; Win"
+            android:textColor="@color/popup_black"
+            android:textSize="@dimen/eighteen"
+            android:textStyle="bold"
+            android:fontFamily="@font/lato_regular"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.41"
+            app:layout_constraintStart_toEndOf="@id/backIv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/failureReasonsIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:src="@drawable/ic_info_yellow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@color/colorBlack"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/childLayout"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <LinearLayout
+        android:id="@+id/rll"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_marginTop="@dimen/thirty"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+       <!-- <com.adefruandta.spinningwheel.SpinningWheelView
+            android:id="@+id/wheel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:wheel_items="@array/dummy"
+            app:wheel_arrow_color="@android:color/transparent"
+            app:wheel_text_size="15dp"
+            app:wheel_stroke_width="5dp"
+            app:wheel_text_style="@style/profile_integer_text_style"
+            app:wheel_stroke_color="@color/colorBlack"
+            app:wheel_colors="@array/rainbow_dash"
+            />
+-->
+<!--        <nl.dionsegijn.konfetti.xml.KonfettiView-->
+<!--            android:id="@+id/konfettiView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent" />-->
+
+<!--        android:background="@drawable/ic_spinwheel"-->
+
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rll"
+        app:layout_constraintStart_toStartOf="@id/rll"
+        app:layout_constraintEnd_toEndOf="@id/rll"
+        app:layout_constraintBottom_toBottomOf="@id/rll"
+        android:src="@drawable/ic_pointer"
+
+
+        />
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/twenty"
+            android:layout_marginTop="@dimen/twenty"
+            android:layout_marginEnd="@dimen/twenty"
+            android:fontFamily="@font/lato_regular"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fifteen"
+            android:gravity="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rll"
+            />
+
+    <Button
+        android:id="@+id/spin"
+        style="@style/yesterday_winners_btn_style"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+
+        android:text="Spin"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/info" />
+
+    <TextView
+        android:id="@+id/termsConditionsLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/twenty"
+        android:text="Terms and Conditions"
+        android:textSize="@dimen/fifteen"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="@dimen/twenty"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spin"
+
+        />
+
+    <TextView
+        android:id="@+id/termsDescTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/twenty"
+        android:layout_marginTop="@dimen/twenty"
+        android:layout_marginEnd="@dimen/twenty"
+        android:layout_marginBottom="@dimen/twenty"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/fifteen"
+        android:fontFamily="@font/lato_regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        app:layout_constraintTop_toBottomOf="@id/termsConditionsLL"
+        app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<difirstNamename="logo_width">137dp</dimen>-->
+    <!--<difirstNamename="logo_height">19dp</dimen>-->
+
+    <!--<difirstNamename="doc_cam_width">25dp</dimen>-->
+    <!--<difirstNamename="doc_cam_height">25dp</dimen>-->
+    <dimen name="header_height">220dp</dimen>
+
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/app_theme_red</color>
+    <color name="colorPrimaryDark">@color/status_bar_color</color>
+    <color name="colorAccent">@color/app_theme_red</color>
+
+    <!--<color name="window_bg_color">#252525</color>-->
+    <color name="window_bg_color">#fff2a7</color>
+    <color name="window_bg_color_dark">#252525</color>
+
+
+    <color name="text_color">#252525</color>
+    <color name="lime">#CDFB98</color>
+
+
+    <color name="app_background_color">#f9faff</color>
+    <color name="app_theme_red">#f85b44</color>
+
+    <color name="home_btn_focus_color">#1779c3</color>
+
+    <color name="edit_text_bg_color">#697893</color>
+    <color name="referral_code_bg_color">#ebebeb</color>
+
+    <color name="transcolorBlack">#66000000</color>
+
+    <color name="transcolorBlack_sixty">#99000000</color>
+    <color name="transcolorBlack_eighty">#CC000000</color>
+    <color name="transcolorBlack_ninety">#E6000000</color>
+
+    <color name="transcolorBlack_ten">#1A000000</color>
+
+    <color name="transcolorWhite">#66FFFFFF</color>
+
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="transparent_colorWhite">#90FFFFFF</color>
+    <color name="login_text_color">#171c66</color>
+    <color name="login_bg">#f9f9f9</color>
+    <color name="gray_color">#d3d3d3</color>
+
+    <color name="green_circle_color">#00a651</color>
+
+    <color name="progress_bar">#FFD580</color>
+
+
+
+    <color name="dark_gray_color">#575a63</color>
+
+    <color name="text_gray_color">#212121</color>
+
+
+    <color name="colorBlack">#000000</color>
+    <color name="orangeYellow">#fcb116</color>
+    <color name="view_line_color">#eeeeee</color>
+
+    <color name="red_color">#d0011b</color>
+
+    <color name="redeem_options_color">#f0f7fe</color>
+    <color name="trasparant">@android:color/transparent</color>
+    <color name="black_p50">#7f000000</color>
+
+
+    <!--<color name="text_color_normal">#B0B0B0</color>-->
+    <color name="text_color_normal">@color/colorBlack</color>
+
+    <color name="fb_blue">#346FF5</color>
+    <!--3B5998-->
+
+    <color name="profile_days_green">#5dbd01</color>
+    <color name="profile_games_yellow">#f7b91a</color>
+    <color name="profile_won_blue">#1a7cf7</color>
+
+    <color name="submit_enable_color">#f05c16</color>
+    <color name="submit_color">#913712</color>
+    <color name="scratch_start_gradient">#e5e5e5</color>
+    <color name="scratch_end_gradient">#cccccc</color>
+
+    <color name="vegga_yellow">@color/status_bar_color</color>
+    <color name="popup_black">#111111</color>
+
+
+
+    <color name="status_bar_color">#f9bb25</color>
+    <color name="yellow_header_color">@color/status_bar_color</color>
+    <color name="yellow_hint_color">#88ffe95f</color>
+    <!--fcff1a-->
+    <color name="winga_bg_color">#1e2436</color>
+    <color name="header_text_color_50">#501e2436</color>
+
+    <!--<color name="address_hint_text_color">#5e6a8e</color>
+    <color name="address_text_color">#9daddd</color>-->
+
+    <color name="address_hint_text_color">@color/no_history_color</color>
+    <color name="address_text_color">@color/colorWhite</color>
+
+    <color name="notification_unread_color">#2b3552</color>
+    <color name="no_history_color">#AAAAAA</color>
+    <color name="tutorial_color">#1a2334</color>
+    <color name="prize_green_color">#00fe57</color>
+    <color name="support_history_strip_color">#37405C</color>
+    <color name="support_history_green_color">#72E85B</color>
+    <color name="button_disable_color">#707070</color>
+
+
+
+
+</resources>
+

@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"
+        android:drawable="@drawable/yellow_camera_bg" /> <!-- pressed -->
+    <item android:state_focused="true"
+        android:drawable="@drawable/dark_yellow_round_circle_bg" /> <!-- focused -->
+    <item android:drawable="@drawable/dark_yellow_round_circle_bg" /> <!-- default -->
+</selector>

@@ -1,0 +1,406 @@
+<?xml version="1.0"?>
+
+<resources>
+
+    <string name="app_name">WinGa</string>
+    <string name="crash_toast_text">Ooooops!క్రాష్ అయినది ! దీని ఫై నివేదిక పంపబడినది .</string>
+
+    <string name="somthing_wrong">సాంకేతిక లోపం జరిగినది.</string>
+
+    <string name="password">పాస్వర్డ్</string>
+    <string name="forgot_password_qstn">పాస్వర్డ్ మర్చిపోయారా?</string>
+    <string name="login">లాగిన్</string>
+    <string name="login_small">లాగిన్</string>
+    <string name="register">నమోదు</string>
+    <string name="or_login">లేదా లాగిన్</string>
+    <string name="firstname">కనిపించే  పేరు *</string>
+    <string name="age_range">వయసు పరిధి</string>
+    <string name="email">ఇమెయిల్</string>
+    <string name="left_for_today_draw">సమయం మాత్రమే మిగిలి ఉన్నది</string>
+    <string name="my_history">నా చరిత్ర</string>
+    <string name="yesterday_winner">ఇటీవలి విజేతలు</string>
+    <string name="iam_ready">నేను సిద్ధం</string>
+    <string name="askquestions">ప్రశ్నలు అడగండి</string>
+    <string name="invites">ఆహ్వానాలు</string>
+    <string name="share">పంచు</string>
+    <string name="addresses">చిరునామాలు</string>
+    <string name="view_all">అన్నీ చూడండి</string>
+    <string name="notifications">ప్రకటనలు</string>
+    <string name="settings">సెట్టింగులు</string>
+    <string name="rate_our_app">ఆప్ కు రేటింగ్ ఇవ్వండి</string>
+    <string name="support">సహాయం</string>
+    <string name="terms_conditions"><![CDATA[నిబంధనలు మరియు షరతులు]]></string>
+    <string name="logout">లాగ్ అవుట్</string>
+    <string name="about">గురించి</string>
+    <string name="tap_to_copy">కాపీ చేయడానికి నొక్కండి</string>
+    <string name="share_code">పాల్గొనడానికి ఆహ్వానించండి</string>
+    <string name="next">తరువాత</string>
+    <string name="city">నగరం *</string>
+    <string name="locality_area_street">ప్రాంతం లేదా వీధి *</string>
+    <string name="flatnum_buildingname">ఫ్లాట్ సంఖ్య, బిల్డింగ్ పేరు *</string>
+    <string name="landmark_optional">మైలురాయి (ఆప్షనల్)</string>
+    <string name="type">రకం *</string>
+    <string name="pincode">పిన్ కోడ్ *</string>
+    <string name="state">రాష్ట్రం *</string>
+    <string name="save">సేవ్</string>
+    <string name="my_addresses">నా చిరునామాలు</string>
+    <string name="change_password">పాస్వర్డ్ మార్చండి</string>
+    <string name="deactivate_acct">ఖాతాను నిలువరించండి </string>
+    <string name="turn_off_notications">నోటిఫికేషన్లను ఆపివేయి</string>
+    <string name="enable_notications">నోటిఫికేషన్లను ప్రారంభించండి</string>
+    <string name="languages">భాషలు</string>
+    <string name="results">ఫలితాలు</string>
+    <string name="yes">అవును</string>
+    <string name="no">కాదు</string>
+    <string name="done">పూర్తి అయినది</string>
+    <string name="clear">తొలగించు</string>
+    <string name="history">చరిత్ర</string>
+    <string name="filters">వడపోతలు</string>
+    <string name="pending">బదిలీ లో ఉన్నది</string>
+    <string name="inprocess">ప్రక్రియ జరుగుతున్నది…</string>
+    <string name="delivered">పంపిణి చేయబడినది</string>
+    <string name="apply">వర్తించు</string>
+    <string name="apply_changes">మార్పులను వర్తింపజేయండి</string>
+    <string name="default_string">అప్రమేయం</string>
+    <string name="set_as_primary">ప్రాథమికంగా సెట్ చేయండి</string>
+    <string name="delete">తొలగించు</string>
+    <string name="edit">మార్చు</string>
+    <string name="address">చిరునామా</string>
+    <string name="current_password">ప్రస్తుత పాస్వర్డ్ *</string>
+    <string name="new_password">కొత్త పాస్వర్డ్ *</string>
+    <string name="retype_password">క్రొత్త పాస్ వర్డ్ ను మళ్లీ టైప్ చేయండి *</string>
+    <string name="save_changes">మార్పులను సేవ్ చేయండి   </string>
+    <string name="generate_otp">OTP ను రూపొందించండి</string>
+    <string name="mobile_num">మొబైల్ సంఖ్య</string>
+    <string name="otp">OTP</string>
+    <string name="resend">OTP ను మళ్ళీ పంపు</string>
+    <string name="verify_otp">OTP ను ధృవీకరించండి</string>
+    <string name="india">భారతదేశం</string>
+    <string name="other">ఇతర</string>
+    <string name="your_registration">మీ నమోదు</string>
+    <string name="successful">విజయవంతమైనది</string>
+    <string name="play_game">చూడండి</string>
+    <string name="you_won_a">మీరు %s ను గెలిచారు</string>
+    <string name="submit">సమర్పించండి</string>
+    <string name="write_comment">సమస్యను వివరించండి </string>
+    <string name="send">పంపండి</string>
+    <string name="alerts_promos_updates"><![CDATA[సందేశాలు&ప్రకటనలు  / సవరణలు ]]></string>
+    <string name="alerts">సందేశాలు</string>
+    <string name="promotions">ప్రకటనలు</string>
+    <string name="updates">సవరణలు</string>
+    <string name="view_your_app_in">మీ భాషలో \n మీ ఆప్ ను  వీక్షించండి</string>
+    <string name="do_u_want_logout">మీరు నిష్క్రమించాలనుకుంటున్నారా?</string>
+
+    <string name="i_accept">నేను ఒప్పుకుంటున్నా</string>
+    <string name="redeem_points">పాయింట్లు రీడీమ్ చేసుకోండి </string>
+    <string name="elegible_lucky_draw">అభినందనలు! మరింత చూడండి మరియు బహుమతులు పొందండి</string>
+    <string name="play_more_games">మరిన్ని ప్రకటనలు  చూడండి </string>
+    <string name="phoneNum">మొబైల్ నంబర్</string>
+    <string name="find_your_mobile">మీ మొబైల్ నెంబర్ ను  కనుగొనండి</string>
+    <string name="enter_code">కోడ్ వ్రాయండి</string>
+    <string name="sent_code_desc">6 అంకెల కోడ్  వచన సందేశం కేవలం %s కు పంపబడింది</string>
+
+
+
+
+    <string name="point_rupee"> %s పాయింట్ = \u20B9 %s</string>
+
+    <string name="not_a_valid_user">ఇచ్చిన వివరాలు చెల్లవు </string>
+    <string name="enter_mobile">మొబైల్ నంబర్ ఇవ్వండి </string>
+    <string name="enter_valid_phone">సరైన మొబైల్ నెంబర్ ఇవ్వండి  </string>
+    <string name="enter_password">సరైన పాస్వర్డ్ ఇవ్వండి </string>
+    <string name="enter_current_password">ప్రస్తుత పాస్వర్డ్ ఇవ్వండి</string>
+    <string name="enter_otp">OTP ను ఎంటర్ చెయ్యండి</string>
+    <string name="otp_sent">OTP మీ  మొబైల్ కు  పంపబడింది</string>
+    <string name="only_answers_correct"> %s సమాధానాలు మాత్రమే సరైనవి</string>
+
+    <string name="enter_valid_ver_code">సరైన కోడ్ ను ఇవ్వండి</string>
+    <string name="enter_new_password">కొత్త పాస్ వర్డ్ ను ఎంటర్ చెయ్యండి</string>
+    <string name="enter_reenter_password">తిరిగి పాస్వర్డ్ను నమోదు చేయండి</string>
+    <string name="passwords_mustbesame">రెండు పాస్వర్డ్ లు ఒకే విధం గా ఉండాలి </string>
+    <string name="change_password_success">పాస్వర్డ్ విజయవంతంగా మార్చబడినది</string>
+    <string name="enter_name">మీ కనిపించే పేరుని నమోదు చేయండి</string>
+    <string name="no_special_characters_name">కనిపించే పేరు లో  ఏ ప్రత్యేక అక్షరాలు కలిగి ఉండకూడదు</string>
+    <string name="no_special_characters_city">నగరం పేరులో ఏదైనా ప్రత్యేక అక్షరాలు ఉండకూడదు</string>
+
+    <string name="enter_valid_email">మీ సరైన ఇమెయిల్ ID ను ఇవ్వండి</string>
+    <string name="enter_valid_city">మీ నగరం పేరును ఇవ్వండి</string>
+    <string name="enter_valid_pincode">మీ పిన్ కోడ్ ఇవ్వండి</string>
+    <string name="please_accept_terms"><![CDATA[కొనసాగడానికి షరతులు అంగీకరించండి]]></string>
+    <string name="money_transfer">డబ్బు బదిలీ</string>
+    <string name="transfer_to_payttm">మీ Paytm వాలెట్ కు  డబ్బును బదిలీ చేయండి</string>
+    <string name="enable_transfer">డబ్బు బదిలీ చేయడానికి ప్రారంభించండి</string>
+    <string name="paytm_wallet">PAYTM వాలెట్ కు </string>
+    <string name="allows_to_add_beneficiary">మీరు Paytm వాలెట్ నుండి డబ్బు బదిలీ కోసం లబ్దిదారుని జోడించడానికి అనుమతిస్తుంది</string>
+    <string name="transfer_money">డబ్బు బదిలీ</string>
+    <string name="please_select_answer_to_continue">కొనసాగించడానికి మీ జవాబును ఎంచుకోండి</string>
+    <string name="logged_out">విజయవంతంగా లాగ్ అవుట్ అయ్యింది</string>
+    <string name="content">కంటెంట్</string>
+    <string name="successfully_submitted">విజయవంతంగా సమర్పించబడింది</string>
+    <string name="select_valid_comment">సరైన వ్యాఖ్యను ఇవ్వండి </string>
+    <string name="you_are_in_level">మీరు %s స్థాయిలో ఉన్నారు</string>
+    <string name="something_wrong">సాంకేతిక లోపం జరిగింది</string>
+    <string name="youtube_init_error">వీడియో  ప్రారంభించడం సాధ్యపడలేదు. మళ్ళీ ప్రయత్నించండి.</string>
+
+    <string name="exit">బయటకు
+</string>
+    <string name="do_u_want_exit">మీరు అప్ నుండి బయటకు వెళ్లాలనుకుంటున్నారా ?
+</string>
+    <string name="please_select_address_type">చిరునామా రకాన్ని ఎంచుకోండి</string>
+    <string name="updated_primary_address_successfully">ప్రాథమిక చిరునామా విజయవంతంగా నవీకరించబడింది</string>
+    <string name="deleted_address_successfully">చిరునామా విజయవంతంగా తొలగించబడింది</string>
+    <string name="address_added_successfully">చిరునామా విజయవంతంగా జోడించబడింది</string>
+    <string name="address_edited_successfully">చిరునామా సవరణ విజయవంతమైంది</string>
+    <string name="add_address">చిరునామాను జోడించండి</string>
+    <string name="enter_valid_locality">సరైన ప్రాంతం లేదా వీధి నమోదు చేయండి</string>
+    <string name="enter_valid_flatnum_bul_name">సరైన ఫ్లాట్ సంఖ్యను నమోదు చేయండి. మరియు భవనం పేరు</string>
+    <string name="oops">అయ్యో!</string>
+    <string name="no_internet">ఇంటర్నెట్ కనెక్షన్ లేదు</string>
+    <string name="check_connection">మీ కనెక్షన్ను తనిఖీ చేయండి</string>
+    <string name="retry">మళ్ళీ ప్రయత్నించు</string>
+    <string name="you_are_lucky_star"> హుర్రే!! మీరు లక్కీ స్టార్. మీరు %s గెలిచారు</string>
+    <string name="contact_for_info">మరింత సమాచారం కోసం WinGa ను సంప్రదించండి</string>
+    <string name="congratulations">అభినందనలు!</string>
+    <string name="answer"> %s %s జవాబు</string>
+    <string name="welcome">స్వాగతం</string>
+    <string name="starts_on"> %s లో మొదలవుతుంది</string>
+    <string name="resend_code">OTPమళ్ళీ పంపు </string>
+    <string name="code_sent_successfully">కోడ్ విజయవంతంగా పంపబడింది</string>
+    <string name="alert">సందేశం</string>
+    <string name="select_an_option_to_proceed">కొనసాగడానికి ఒక ఎంపికను ఎంచుకోండి</string>
+    <string name="enter_eight_digit_password">పాస్వర్డ్ కనీసం 8 అక్షరాలు ఉండాలి</string>
+    <string name="no_special_characters_password">పాస్వర్డ్ లో  ప్రత్యేక అక్షరాలు ఉండకూడదు</string>
+    <string name="enter_eight_digit_new_password">కొత్త పాస్వర్డ్ కనీసం 8 అక్షరాలు ఉండాలి</string>
+    <string name="no_special_characters_new_password">క్రొత్త పాస్ వర్డ్ లో  ఏ ప్రత్యేక అక్షరాలను కలిగి ఉండకూడదు</string>
+    <string name="you_won">మీరు గెలిచినవి </string>
+
+    <string name="home">ప్రారంభం</string>
+    <string name="questions">ప్రశ్నలు</string>
+    <string name="bonus_points">బోనస్ పాయింట్లు</string>
+    <string name="better_luck_next_time">మరోసారి మీ అదృష్టం పరీక్షించుకోండి!</string>
+    <string name="thank_u_for_playing">ధన్యవాదములు.</string>
+    <string name="for_more_chances_participate">మరింత అవకాశాలు గెలుచుకోడానికి, పాల్గొనడానికి.</string>
+    <string name="good_luck">గుడ్ లక్!</string>
+    <string name="continue_text">కొనసాగించు</string>
+    <string name="wow_you_earned">వావ్, మీరు సంపాదించుకున్నారు</string>
+    <string name="point">పాయింట్లు</string>
+    <string name="play_more_to_earn_points">మరిన్ని పాయింట్లను సంపాదించడానికి మరిన్ని ప్రకటనలు చూడండి </string>
+    <string name="version">సంస్కరణ %s</string>
+    <string name="go_to_questions">ప్రశ్నలకు వెళ్ళండి</string>
+    <string name="session_closed">ప్రస్తుత సెషన్ పూర్తి అయినది </string>
+    <string name="or">(లేదా)</string>
+    <string name="not_scratched">కార్డు గీతలు, ఇతర వారీగా మీరు పాయింట్లు కోల్పోతారు.</string>
+    <string name="info">సమాచారం</string>
+    <string name="cancel">రద్దు</string>
+    <string name="loyalty_points">పాయింట్లు</string>
+    <string name="winners">విజేతలు</string>
+    <string name="yesterday_winners_list">ఇటీవలి విజేతలు జాబితా</string>
+    <string name="users">వినియోగదారులు</string>
+    <string name="pick_the_date">తేదీని ఎంచుకోండి</string>
+    <string name="users_win_yesterday_lucky_daw">  %s వినియోగదారులు WinGaలో %s గెలిచారు</string>
+
+    <string name="code_copied">కోడ్ కాపీ చేయబడింది</string>
+    <string name="current_password_new_password_not_same">ప్రస్తుత పాస్ వర్డ్ మరియు కొత్త పాస్వర్డ్ ఒకేలా ఉండకూడదు</string>
+    <string name="update_from_camera">కెమెరా నుండి చిత్రాన్ని అప్లోడ్ చేయండి</string>
+    <string name="upload_from_gallery">ఫోటో లైబ్రరీ నుండి చిత్రాన్ని అప్లోడ్ చేయండి</string>
+    <string name="remove_photo">ఫోటో తీసివేయండి</string>
+    <string name="do_u_want_to_exit_without_saving">మీరు నిష్క్రమించాలనుకుంటున్నారా? మీ మార్పులు నిష్క్రమించేటప్పుడు నష్టపోతాయి.</string>
+    <string name="change_mob_num">మొబైల్ నంబర్ని మార్చండి</string>
+    <string name="select_state">రాష్ట్రం ఎంచుకోండి</string>
+    <string name="do_it_later">తరువాత చేయండి</string>
+
+    <string name="confirmation">నిర్ధారణ</string>
+    <string name="are_u_sure_to_deactivate">మీరు ఖచ్చితంగా ఖాతాను మూసివేయాలి అనుకుంటున్నారా?</string>
+    <string name="deactivated_successfully">మీ ఖాతా విజయవంతంగా మూసివేయ బడింది</string>
+    <string name="win_scratch_desc"> స్క్రాచ్ చేసి బోనస్ పాయింట్లు కూడా తీసుకోండి. </string>
+    <string name="loss_scratch_desc">మీరు ఇప్పటికీ బోనస్ పాయింట్లను సంపాదించగలరని గుర్తుంచుకోండి. స్క్రాచ్ చేసి చూడండి</string>
+    <string name="hurry_30mnts_left">మరిన్ని ప్రకటనలు చూడడానికి మాత్రమే మిగిలి ఉంది</string>
+    <string name="hurry_text">త్వరపడండి </string>
+    <string name="today_results_in">నేటి  ఫలితాలు</string>
+    <string name="send_email">మెయిల్ పంపండి</string>
+    <string name="watch_more_videos_and"><![CDATA[మరిన్ని ప్రకటనలు చూడండి  &]]></string>
+    <string name="win_exciting_giftspl">ఉత్తేజకరమైన బహుమతులు గెలవండి </string>
+    <string name="item_delivered">బహుమతి ఇవ్వబడినది </string>
+    <string name="all_day">రోజంతా</string>
+    <string name="play_history">చరిత్ర</string>
+    <string name="day_by_day">రోజు రోజుకి</string>
+    <string name="no_addresses">చిరునామాలు ఏవీ లేవు</string>
+    <string name="no_loyalty_points"> పాయింట్లు లేవు</string>
+    <string name="and_win_loyalty_points">మరియు పాయింట్లు గెలుచుకోండి</string>
+    <string name="no_history">చరిత్ర లేదు</string>
+    <string name="play_multiple_days">బహుళ రోజుల ప్లే</string>
+    <string name="and_win_gifts">మరియు బహుమతులు గెలుచుకోండి</string>
+    <string name="no_invites">ఆహ్వానాలు లేవు</string>
+    <string name="tutorial">నేర్చుకోండి </string>
+    <string name="no_gifts_cap">బహుమతులు లేవు </string>
+    <string name="or_cap">లేదా</string>
+    <string name="no_winners">విజేతలు లేరు </string>
+    <string name="on_selected_date">ఎంచుకున్న తేదీన</string>
+    <string name="no_notifications">నోటిఫికేషన్లు లేవు</string>
+    <string name="total_points">మొత్తం పాయింట్లు</string>
+    <string name="redeemed_points">రీడీమ్ చేసిన పాయింట్లు</string>
+    <string name="available_points">మిగిలిన పాయింట్లు</string>
+    <string name="minimum_x_points">కనిష్ట %s పాయింట్లు</string>
+    <string name="redeem_points_to">రెడీమ్ చేసుకోండి </string>
+    <string name="paytm_number">Paytm సంఖ్య</string>
+    <string name="enter_points_to_redeem">రీడీమ్ పాయింట్లు నమోదు చేయండి</string>
+    <string name="redeem_points_more_than_x">రీడీమ్ పాయింట్లు తప్పనిసరిగా %s కంటే ఎక్కువగా ఉండాలి</string>
+    <string name="redeem_points_cannot_be_more_than_x">రీడీమ్ పాయింట్లు %s కంటే ఎక్కువ కారాదు </string>
+    <string name="x_rupees_transfer_to_paytm">\u20B9%s మీ Paytm వాలెట్ కు బదిలీ అవుతోంది</string>
+    <string name="session_start_soon">సెషన్ వెంటనే మొదలవుతుంది</string>
+    <string name="referral_code_optional">రెఫరల్ కోడ్ (ఐచ్ఛికం)</string>
+    <string name="no_special_characters_referralcode">రెఫరల్ కోడ్ ఫీల్డ్ ఏ ప్రత్యేక అక్షరాలు కలిగి ఉండకూడదు</string>
+    <string name="skip_underline"><u> స్కిప్ </u></string>
+    <string name="service_not_available">సహాయము అందించుట వీలుకాదు</string>
+    <string name="got_it">దొరికింది</string>
+    <string name="you_have_won_rupees">మీరు %s రూపాయలు గెలిచారు</string>
+    <string name="okay">సరే</string>
+
+    <string name="check_internet">దయచేసి మీ ఇంటర్నెట్ కనెక్షన్ను తనిఖీ చేయండి.</string>
+    <string name="tutorial_profile">మీ ప్రొఫైల్ను వీక్షించడానికి దీన్ని క్లిక్ చేయండి</string>
+    <string name="tutorial_history">ఇది మీ విజేత చరిత్రకు</string>
+    <string name="tutorial_recent_winners">ఇటీవలి విజేతలను  ఇక్కడ చూడండి</string>
+    <string name="total_rewards">మొత్తం బహుమతులు </string>
+    <string name="search">వెతుకు</string>
+    <string name="select_preferred_state">ప్రాధాన్య రాష్ట్రాన్ని ఎంచుకోండి</string>
+    <string name="preferred_state">ఇష్టపడే రాష్ట్రం</string>
+    <string name="upload_photo_from">దీని నుండి ఫోటోను అప్లోడ్ చేయండి:</string>
+    <string name="tutorial_edit_profile">మీ ప్రొఫైల్ని సవరించడానికి</string>
+    <string name="tutorial_answer_questions">ప్రశ్నలకు సమాధానం ఇవ్వండి</string>
+    <string name="tutorial_submit_answers">సమాధానాలను సమర్పించడానికి</string>
+    <string name="tutorial_watch_video_again">మళ్ళీ ట్యుటోరియల్  చూడడానికి</string>
+    <string name="tutorial_scratch">స్క్రాచ్ చేసి గెలుచుకున్న పాయింట్స్ ను చుడండి</string>
+    <string name="pincode_not_accept_zeros">పిన్-కోడ్ అన్ని సున్నాలను ఆమోదించదు.</string>
+    <string name="image_changed_successfully">ప్రొఫైల్ చిత్రం విజయవంతంగా మార్చబడింది.</string>
+    <string name="new_notification_received">క్రొత్త నోటిఫికేషన్ అందినది </string>
+    <string name="video_not_playable">ఈ వీడియో ప్లే చేయబడదు. దయచేసి వేచి ఉండండి.</string>
+    <string name="not_able_to_play">వీడియోను ప్లే చేయడం సాధ్యం కాలేదు. కొంత సమయం తర్వాత మళ్లీ ప్రయత్నించండి.</string>
+    <string name="skip">స్కిప్</string>
+    <string name="tutorial_watch_videos">వీడియోలను చూడండి</string>
+    <string name="tutorial_answer_simple_questions">సాధారణ ప్రశ్నలకు సమాధానం ఇవ్వండి</string>
+    <string name="tutorial_get_lucky_to_stand_close">ఉత్తేజకరమైన బహుమతులు గెలుచుకోవడానికి అవకాశం పొందండి</string>
+    <string name="tutorial_earn_rewards_loyalty_points">బహుమతులు మరియు పాయింట్లు సంపాదించండి</string>
+    <string name="tutorial_redeem_to_paytm">నేరుగా Paytm ఖాతాకు పంపండి</string>
+    <string name="image_removed_successfully">ప్రొఫైల్ చిత్రం విజయవంతంగా తీసివేయబడింది</string>
+    <string name="lets_start">మొదలు పెడదాం</string>
+
+
+    <string name="transferred_to_paytm">మీ డబ్బు బదిలీ అభ్యర్థన విజయవంతమైంది, 24 గంటల్లో డబ్బు మీ PayTm వాలెట్ కు బదిలీ చేయబడుతుంది</string>
+    <string name="unable_to_get_location">లొకేషన్ పొందడం సాధ్యం కాలేదు. దయచేసి నగరాన్ని నమోదు చేయండి.</string>
+    <string name="no_points_available">మీకు రీడీమ్ చేయడానికి పాయింట్లు  లేవు </string>
+    <string name="you_have_an_update">మీకు ఒక కొత్త వెర్షన్ అప్డేట్ ఉంది. దయచేసి కొనసాగడానికి డౌన్లోడ్ చేసుకోండి.</string>
+    <string name="update">అప్డేట్</string>
+    <string name="enter_digit_otp">6 అంకెల OTP ను ఎంటర్ చెయ్యండి</string>
+
+
+    <string name="games_play">పాల్గొన్నవి </string>
+    <string name="games_won">గెలిచినవి</string>
+    <string name="game_won">గెలిచినవి</string>
+    <string name="play_game_get_rupees">మొదటి వీడియో చూడండి మరియు బహుమతులు పొందండి</string>
+    <string name="keep_play_games">మరిన్ని పాయింట్లు సంపాదించడానికి మరియు గెలిచే అవకాశం పెంచుకోడానికి మరిన్ని ప్రకటనలు  చూడండి </string>
+    <string name="do_u_want_go_home">మీరు ఖచ్చితంగా నిష్క్రమించాలనుకుంటున్నారా?</string>
+    <string name="info_play_button">ప్రకటనలు చూడడానికి దీన్ని క్లిక్ చేయండి</string>
+    <string name="win_points_on_refer">మీ స్నేహితులు తన మొట్టమొదటి ప్రకటనను  చూసినప్పుడు %s రూపాయలు సంపాదించండి, మీ స్నేహితులు కూడా %s రూపాయలు పొందుతాడు.</string>
+    <string name="password_mandate">పాస్వర్డ్ *</string>
+
+
+    <string name="tutorial_scratch_card">కార్డును స్క్రాచ్ చేయండి ! పాయింట్లు పొందండి</string>
+    <string name="tutorial_watch_video">ప్రకటన చూడండి ! ప్రశ్నలకు సమాధానాలు ఇవ్వండి !</string>
+    <string name="won"> గెలిచారు %s</string>
+    <string name="do_u_want_to_reactivate">మీరు మీ అకౌంట్ ను తిరిగి ఉపయోగించతలుచుకున్నారా?</string>
+    <string name="your_acnt_deactivated_contact_support">మీ అకౌంట్ ఆపివేయడమైనది ! WinGa సహాయానికి ఫోన్ చెయ్యండి </string>
+    <string name="set_password">పాస్వర్డ్ ఇవ్వండి </string>
+    <string name="tutorial_winner">	హుర్రే !!! మీరు అదృష్టవంతులు !! \n మరింత ఆడండి &amp; బహుమతులు పొందండి</string>
+    <string name="watch_tutorial">	ఆప్ ను ఉపయోగించడానికి ట్యుటోరియల్ చూడండి </string>
+    <string name="activate_your_mobile_number">మీ మొబైల్ నెంబర్ ను ఆక్టివేట్ చెయ్యండి </string>
+    <string name="your_acnt_activated_success">	మీ WinGa అకౌంట్ ఆక్టివేట్ చేయబడినది </string>
+    <string name="special_session">ప్రత్యేక సెషన్</string>
+    <string name="contact_winga">వింగా ను సంప్రదించండి</string>
+    <string name="for_further_info">మరిన్ని వివరాలకు</string>
+    <string name="winners_list">విజేతల జాబితా</string>
+    <string name="all">అన్ని (%d)</string>
+    <string name="resolved">పరిష్కరించబడినది</string>
+    <string name="closed">ముగించబడినది</string>
+    <string name="office">ఆఫీసు</string>
+    <string name="support_service">సర్వీస్</string>
+    <string name="support_delivery">డెలివరీ</string>
+
+    <string name="address_home">ఇళ్లు</string>
+    <string name="select_content_type">మద్దతు రకం ఎంచుకోండి</string>
+    <string name="unable_top_open_playstore">ప్లేస్టోర్ను ప్రారంభించడం సాధ్యపడలేదు.</string>
+    <string name="select_another_pic">ఎంచుకున్న చిత్రాన్ని ఉపయోగించడం సాధ్యం కాదు. దయచేసి మరో చిత్రాన్ని ఎంచుకోండి.</string>
+    <string name="not_registered_register_to_continue">మీరు సంఖ్య నమోదు కాలేదు. దయచేసి కొనసాగడానికి నమోదు చేయండి.</string>
+    <string name="total_loyalty_points">పొందిన మొత్తం పాయింట్లు</string>
+    <string name="available">అందుబాటులో</string>
+    <string name="paid">చెల్లింపు</string>
+    <string name="are_u_sure_to_delete_address">మీరు ఖచ్చితంగా ఈ చిరునామాను తొలగించాలనుకుంటున్నారా?</string>
+    <string name="preferred_content">ఇష్టపడే కంటెంట్</string>
+    <string name="game_starts_in_sec">ఆట %s క్షణాలలో ప్రారంభమవుతుంది ...</string>
+    <string name="unable_to_connect_try_again">సర్వర్ కి అనుసంధానం అవ్వలేకపోతున్నాము. దయచేసి మళ్లీ ప్రయత్నించండి.</string>
+    <string name="remark">వ్యాఖ్య:</string>
+    <string name="message">సందేశం:</string>
+    <string name="status">స్థితి:</string>
+    <string name="select_age_range">కొనసాగించడానికి మీ వయస్సు పరిధిని ఎంచుకోండి</string>
+    <string name="select_gender">కొనసాగించడానికి మీ లింగాన్ని ఎంచుకోండి</string>
+
+
+    <string name="vouchers">వోచర్లు</string>
+    <string name="redeem_via">రిడీమ్ చేయండి</string>
+    <string name="add">చేర్చు</string>
+    <string name="no_vouchers">వోచర్లు లేవు </string>
+    <string name="redeem">రీడీమ్  చేసుకోండి </string>
+    <string name="balance_points">మిగిలిన పాయింట్లు %s</string>
+    <string name="voucher_code"> వోచర్  కోడ్ #%s</string>
+    <string name="voucher_validity">చెల్లుబాటు #%s</string>
+    <string name="select_voucher">కొనసాగించడానికి కనీసం ఒక  వోచర్ను ఎంచుకోండి</string>
+    <string name="voucher_transfer_successful">మీ వోచర్ రీడీమ్ అభ్యర్ధన విజయవంతమైంది, 24 గంటల్లో స్టేటస్ రిజిస్టర్డ్ మొబైల్ నంబర్ కు తెలియజేయబడుతుంది.</string>
+    <string name="voucher_details"> వోచర్ వివరాలు</string>
+    <string name="close">Close</string>
+    <string name="unable_to_redeem_try_again">రీడీమ్ చేయలేము. మళ్ళీ ప్రయత్నించండి.</string>
+    <string name="insufficient_points">మీరు ఈ  వోచర్ని పొందడానికి  తగినంత బ్యాలెన్స్ పాయింట్లను కలిగి లేరు</string>
+    <string name="no_redemption_option_available">క్షమించండి, ప్రస్తుతం రీడీమ్ ఎంపిక అందుబాటులో లేదు.</string>
+    <string name="not_available_now">క్షమించండి %s ఇప్పుడు అందుబాటులో లేవు.</string>
+
+
+
+
+
+    <string name="other_country" translatable="false">ఇతర దేశం</string>
+    <string name="seconds_inshort_en" translatable="false">సెకన్లు</string>
+    <string name="sec_inshort_en" translatable="false"> క్షణం</string>
+
+    <string name="minuts_inshort_en" >ని...లు </string>
+    <string name="min_inshort_en" >ని...లు </string>
+    <string name="in_minutes" >ని...లో</string>
+
+
+
+    <string name="paytm" translatable="false">Paytm</string>
+    <string name="facebook" translatable="false">ఫేస్బుక్</string>
+    <string name="google" translatable="false">గూగుల్</string>
+
+    <string name="faq" translatable="false">FAQ</string>
+    <string name="both" translatable="false">రెండు</string>
+    <string name="image" translatable="false">చిత్రం</string>
+    <string name="video" translatable="false">వీడియో</string>
+    <string name="gender" translatable="false">జెండర్ *</string>
+    <string name="male" translatable="false">పురుషుడు</string>
+    <string name="female" translatable="false">మహిళ</string>
+    <string name="refer_earn"><![CDATA[ఆహ్వానించు & సంపాదించు]]></string>
+    <string name="retry_voucher_request_successful">మీ వోచర్ రీడీమ్ అభ్యర్ధన విజయవంతమైంది, 24 గంటల్లో స్టేటస్ రిజిస్టర్డ్ మొబైల్ నంబర్ మీకు తెలియజేయబడుతుంది.</string>
+    <string name="redeem_points_should_be_in_multiple">రీడీమ్ పాయింట్లు %s యొక్క బహుళంగా ఉండాలి</string>
+    <string name="enter_points_multiple_of">%s యొక్క బహుళ పాయింట్లు నమోదు చేయండి</string>
+    <string name="tutorial_vouchers">వోచర్లు ఉపయోగించి రీడీమ్ చేయండి</string>
+    <string name="transfer_may_fail_paytm">బదిలీ సందర్భంలో పని చేయకపోవచ్చు</string>
+    <string name="paytm_failure_reason_one">1. మీరు మీ మొబైల్ నంబరుతో Winga అనువర్తనంలో ఉపయోగించిన చెల్లింపు ఖాతాను కలిగి లేరు. దయచేసి Paytm ఖాతాని సృష్టించండి.</string>
+    <string name="paytm_failure_reason_two">2. మీరు Paytm కెవైసి చేయలేరు. ఈ సందర్భంలో,  మీ Paytm Wallet లోకి డబ్బును బదిలీ చేయడానికి Winga ప్రయత్నించినప్పుడు మీరు Paytm నుండి ఒక SMS ను అందుకుంటారు.</string>
+    <string name="paytm_failure_reason_three">3. Paytm లో మీ పరిమితి పూర్తి అయి ఉండవచ్చు. Paytm కనీస KYC వినియోగదారులకు నెలవారీ 10,000 అనుమతిస్తుంది. పెరుగుతున్న పరిమితి కోసం మీరు Paytm పూర్తి KYC చేయాలి. పూర్తి KYC కస్టమర్లకు గరిష్ఠ పరిమితి 1,00,000.</string>
+
+    <string name="you_can_refer_friends">మీరు మీ స్నేహితులను ఆహ్వానించవచ్చు</string>
+
+    <string name="tnx_for_registering">రిజిస్టర్ అయినందుకు ధన్యవాదాలు</string>
+    <string name="winga_live_on">Winga ప్రారంభ తేదీ</string>
+    <string name="privacy_policy"><![CDATA[ ప్రైవసీ పాలసీ]]></string>
+
+
+</resources>

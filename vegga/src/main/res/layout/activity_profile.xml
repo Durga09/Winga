@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainRL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/winga_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adFragment"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="#00000000"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:foregroundGravity="center_vertical"
+                android:src="@drawable/ic_transparent" />
+
+            <TextView
+                android:id="@+id/tv_top_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/ten"
+                android:text="Name"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lato_regular"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_height">
+
+            <in.eightfolds.winga.utils.CustomImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/header_height"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/menubg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five">
+
+                    <ImageView
+                        android:id="@+id/closeIv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:padding="@dimen/ten"
+                        android:src="@drawable/ic_close"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/editIv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="@dimen/ten"
+                        android:src="@drawable/ic_edit"
+                        android:tag="edit" />
+
+                </RelativeLayout>
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_profile_centre"
+                    android:layout_width="@dimen/profile_ic_dimen"
+                    android:layout_height="@dimen/profile_ic_dimen"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_user_filled" />
+
+                <TextView
+                    android:id="@+id/tv_centre_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="@dimen/five"
+                    android:text="Name"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/lato_regular"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_centre_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="@dimen/five"
+                    android:text="Mobile Number"
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/lato_regular"
+                    />
+
+                <TextView
+                    android:id="@+id/levelTv"
+                    style="@style/profile_level_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14dp"
+                    tools:text="--------------------" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <in.eightfolds.utils.MyScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?android:attr/actionBarSize"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/profile_middle_view_height"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/iv_center_position_view"
+                        android:layout_width="@dimen/profile_ic_dimen"
+                        android:layout_height="@dimen/profile_ic_dimen"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <LinearLayout
+                        android:id="@+id/otherDetailsLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="vertical">
+
+
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/contentLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/twenty_five"
+                    android:orientation="vertical"
+                    android:paddingBottom="0dp">
+
+                    <LinearLayout
+                        android:id="@+id/rewardsCountLL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_gravity="center"
+                        android:background="@drawable/blue_button_bg"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/thirty"
+                        android:minWidth="@dimen/button_width"
+                        android:paddingRight="@dimen/thirty">
+
+                        <TextView
+                            android:id="@+id/totalRewardsTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:foregroundGravity="center"
+                            android:gravity="center"
+                            android:text="@string/total_rewards"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14dp"
+                            android:visibility="visible" />
+
+                        <TextView
+
+                            android:id="@+id/rewardsValueTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/ten"
+                            android:foregroundGravity="center"
+                            android:gravity="center"
+                            android:text="--"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/lato_regular"
+                            android:lines="1"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/ten"
+                            android:layout_marginLeft="@dimen/fifteen"
+                            android:layout_marginRight="@dimen/fifteen"
+                            android:layout_marginTop="@dimen/fifteen"
+                            android:orientation="horizontal"
+                            android:paddingBottom="@dimen/five"
+                            android:paddingTop="@dimen/five"
+
+                            android:weightSum="99">
+
+                            <LinearLayout
+                                android:id="@+id/loyaltyPointsLL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/five"
+                                android:layout_marginRight="@dimen/five"
+                                android:layout_weight="33"
+                                android:background="@drawable/green_profile_days_select_bg"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/numberOfLoyaltyPointsTv"
+                                    style="@style/profile_integer_text_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    tools:text="--" />
+
+
+                                <TextView
+                                    android:id="@+id/loyaltyPointsDesc"
+                                    style="@style/profile_integer_desc_text_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/loyalty_points" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/gamesLL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/five"
+                                android:layout_marginRight="@dimen/five"
+                                android:layout_weight="33"
+                                android:background="@drawable/yellow_profile_games_select_bg"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/numberOfgamesTv"
+                                    style="@style/profile_integer_text_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    tools:text="--" />
+
+
+                                <TextView
+                                    android:id="@+id/gamesPlayedDesc"
+                                    style="@style/profile_integer_desc_text_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/games_play" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/gamesWonLL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/five"
+                                android:layout_marginRight="@dimen/five"
+                                android:layout_weight="33"
+                                android:background="@drawable/blue_profile_won_select_bg"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/numberOfGamesWonTv"
+                                    style="@style/profile_integer_text_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    tools:text="--" />
+
+
+                                <TextView
+                                    android:id="@+id/gameWonDesc"
+                                    style="@style/profile_integer_desc_text_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/game_won" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/historyLL"
+                                style="@style/profile_item_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    style="@style/profile_icon_style"
+                                    android:layout_width="wrap_content"
+                                    android:src="@drawable/ic_history" />
+
+                                <TextView
+                                    android:id="@+id/myHistoryDescTv"
+                                    style="@style/profile_option_text_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/my_history" />
+                            </LinearLayout>
+
+                            <View
+                                style="@style/profile_option_seperatorview_style"
+                                android:visibility="gone" />
+
+
+                            <LinearLayout
+                                android:id="@+id/addressesLL"
+                                style="@style/profile_item_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    style="@style/profile_icon_style"
+                                    android:src="@drawable/ic_placeholder" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toLeftOf="@+id/viewAllTv"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/addressesDescTv"
+                                            style="@style/profile_option_text_style"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/colorWhite"
+                                            android:layout_gravity="left|center_vertical"
+                                            android:text="@string/addresses" />
+
+
+                                        <TextView
+                                            android:id="@+id/addressTv"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="@dimen/three"
+                                            android:gravity="center_vertical"
+                                            android:textColor="@color/colorWhite"
+                                            android:textSize="10dp"
+                                            android:visibility="visible"
+                                            tools:text="#301, H.No.12-34-1, Plot No: 317, DLKR House, Kamalapuri Colony, Banjara Hills, Hyderabad TG- 500012" />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:id="@+id/viewAllTv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginLeft="@dimen/five"
+                                        android:foregroundGravity="center_vertical"
+                                        android:padding="@dimen/five"
+                                        android:textColor="@color/app_theme_red"
+                                        android:textSize="12dp" />
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+
+                            <View style="@style/profile_option_seperatorview_style" />
+
+
+                            <LinearLayout
+                                android:id="@+id/referEarnLL"
+                                style="@style/profile_item_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    style="@style/profile_icon_style"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_shareandearn" />
+
+                                <TextView
+                                    android:id="@+id/referEarnDescTv"
+                                    style="@style/profile_option_text_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorWhite"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/refer_earn" />
+                            </LinearLayout>
+
+                            <View style="@style/profile_option_seperatorview_style" />
+
+                            <LinearLayout
+                                android:id="@+id/notificationsLL"
+                                style="@style/profile_item_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/ten">
+
+                                <ImageView
+                                    style="@style/profile_icon_style"
+                                    android:src="@drawable/ic_notification" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/notificationsDescTv"
+                                        style="@style/profile_option_text_style"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:foregroundGravity="center_vertical"
+                                        android:textColor="@color/colorWhite"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/notifications" />
+
+                                    <ImageView
+                                        android:id="@+id/disableNotificationsSwitch"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:paddingBottom="@dimen/five"
+                                        android:paddingLeft="7dp"
+                                        android:paddingRight="7dp"
+                                        android:src="@drawable/ic_switch_on"
+                                        android:visibility="invisible"
+                                        tools:visibility="visible" />
+
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+                            <View style="@style/profile_option_seperatorview_style" />
+
+
+                            <LinearLayout
+                                android:id="@+id/settingsLL"
+                                style="@style/profile_item_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    style="@style/profile_icon_style"
+                                    android:src="@drawable/ic_settings" />
+
+                                <TextView
+                                    android:id="@+id/settingsDescTv"
+                                    style="@style/profile_option_text_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorWhite"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/settings" />
+                            </LinearLayout>
+
+                            <View style="@style/profile_option_seperatorview_style" />
+
+
+                            <LinearLayout
+                                android:id="@+id/rateOurAppLL"
+                                style="@style/profile_item_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    style="@style/profile_icon_style"
+                                    android:src="@drawable/ic_rateourapp" />
+
+                                <TextView
+                                    android:id="@+id/rateOurAppDescTv"
+                                    style="@style/profile_option_text_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorWhite"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/rate_our_app" />
+                            </LinearLayout>
+
+                            <View
+                                style="@style/profile_option_seperatorview_style"
+                                android:visibility="gone" />
+
+
+                            <LinearLayout
+                                android:id="@+id/shareLL"
+                                style="@style/profile_item_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    style="@style/profile_icon_style"
+                                    android:src="@drawable/ic_share" />
+
+                                <TextView
+                                    android:id="@+id/shareDescTv"
+                                    style="@style/profile_option_text_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/share" />
+                            </LinearLayout>
+
+                            <View style="@style/profile_option_seperatorview_style" />
+
+
+                            <LinearLayout
+                                android:id="@+id/supportLL"
+                                style="@style/profile_item_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    style="@style/profile_icon_style"
+                                    android:src="@drawable/ic_support" />
+
+                                <TextView
+                                    android:id="@+id/supportDescTv"
+                                    style="@style/profile_option_text_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:textColor="@color/colorWhite"
+                                    android:text="@string/support" />
+                            </LinearLayout>
+
+                            <View style="@style/profile_option_seperatorview_style" />
+
+
+                            <LinearLayout
+                                android:id="@+id/termsConditionsLL"
+                                style="@style/profile_item_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    style="@style/profile_icon_style"
+                                    android:src="@drawable/ic_terms_conditions" />
+
+                                <TextView
+                                    android:id="@+id/termsDescTv"
+                                    style="@style/profile_option_text_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorWhite"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/terms_conditions" />
+
+
+                            </LinearLayout>
+                            <View style="@style/profile_option_seperatorview_style" />
+                            <LinearLayout
+                                android:id="@+id/privacyPolicyLL"
+                                style="@style/profile_item_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    style="@style/profile_icon_style"
+                                    android:src="@drawable/ic_terms_conditions" />
+
+
+
+                                <TextView
+                                    android:id="@+id/privacyPolicyTv"
+                                    style="@style/profile_option_text_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:textColor="@color/colorWhite"
+                                    android:text="@string/privacy_policy" />
+                            </LinearLayout>
+
+                            <View style="@style/profile_option_seperatorview_style" />
+
+
+                            <LinearLayout
+                                android:id="@+id/faqLL"
+                                style="@style/profile_item_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    style="@style/profile_icon_style"
+                                    android:src="@drawable/ic_faq" />
+
+                                <TextView
+                                    android:id="@+id/faqDescTv"
+                                    style="@style/profile_option_text_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:textColor="@color/colorWhite"
+                                    android:text="@string/faq" />
+                            </LinearLayout>
+
+                            <View style="@style/profile_option_seperatorview_style" />
+
+
+                            <LinearLayout
+                                android:id="@+id/tutorialLL"
+                                style="@style/profile_item_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    style="@style/profile_icon_style"
+                                    android:src="@drawable/ic_tutorial" />
+
+                                <TextView
+                                    android:id="@+id/tutorialDescTv"
+                                    style="@style/profile_option_text_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:textColor="@color/colorWhite"
+                                    android:text="@string/tutorial" />
+                            </LinearLayout>
+
+                            <View style="@style/profile_option_seperatorview_style"
+                                android:visibility="gone"
+                                />
+
+
+                            <LinearLayout
+                                android:id="@+id/logoutLL"
+                                style="@style/profile_item_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    style="@style/profile_icon_style"
+                                    android:src="@drawable/ic_logout" />
+
+                                <TextView
+                                    android:id="@+id/logOutDescTv"
+                                    style="@style/profile_option_text_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:textColor="@color/colorWhite"
+                                    android:text="@string/logout" />
+                            </LinearLayout>
+
+                            <View style="@style/profile_option_seperatorview_style" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/versionLL"
+                            style="@style/profile_item_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/aboutDescTv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/about"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/versionNumTv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Version 1.0"
+                                android:textColor="@color/app_theme_red"
+                                android:textSize="18dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/poweredByTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/status_bar_color"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/eight"
+                    android:paddingTop="@dimen/eight"
+                    android:text="@string/powered_by"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+        </in.eightfolds.utils.MyScrollView>
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/adFragment"
+        android:name="in.eightfolds.winga.fragment.AdBannerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        tools:layout="@layout/fragment_ad_banner" />
+
+</RelativeLayout>

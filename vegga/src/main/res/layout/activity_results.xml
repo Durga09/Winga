@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/window_bg_color_dark"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <in.eightfolds.winga.utils.CustomImageView
+            android:id="@+id/bgImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/questionbg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/backIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/ten"
+                    android:src="@drawable/ic_back_black" />
+
+                <TextView
+                    android:id="@+id/exitTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/ten"
+                    android:text="@string/exit"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/topTitleTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/thirty"
+                android:layout_marginTop="@dimen/title_margin"
+                android:gravity="bottom"
+                android:text="@string/results"
+                android:textColor="@color/colorBlack"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <in.eightfolds.winga.utils.BernhcTextView
+            android:id="@+id/winPointsTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="120dp"
+            android:layout_marginRight="@dimen/twenty_five"
+            android:textColor="@color/app_theme_red"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            tools:text="2" />
+
+        <LinearLayout
+            android:id="@+id/bottomLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/answerStatusRecyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/twenty"
+                tools:layout_height="100dp"
+                tools:listitem="@layout/lay_result_template"/>
+
+            <TextView
+                android:id="@+id/bottomDescTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_marginRight="@dimen/ten"
+                android:layout_marginTop="@dimen/twenty"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="@string/only_answers_correct"
+                android:textColor="#AAAAAA"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomProfileLL"
+            android:layout_below="@+id/bottomLL">
+
+            <LinearLayout
+                android:id="@+id/scratchLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/winOrLossScratchDescTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/scratchLL"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp"
+                    tools:text="@string/win_scratch_desc" />
+
+                <LinearLayout
+                    android:id="@+id/scratchLL"
+                    android:layout_width="@dimen/scratch_card_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/fifteen"
+                    android:background="@drawable/blue_rectangle_bg"
+                    android:clipChildren="true"
+                    android:clipToPadding="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:paddingTop="@dimen/five"
+                        android:paddingBottom="@dimen/five"
+                        android:text="@string/bonus_points"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+
+                    <in.eightfolds.winga.scratch.ScratchTextView
+                        android:id="@+id/scratch_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/scratch_card_height"
+                        android:layout_gravity="center"
+                        android:background="@drawable/gray_half_rectangle"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/ten"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="36dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottomProfileLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <RelativeLayout
+                android:id="@+id/profileRL"
+                android:layout_width="@dimen/profile_tab_width"
+                android:layout_height="@dimen/profile_tab_height"
+                android:background="@drawable/profile">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profilePicIV"
+                    android:layout_width="@dimen/thirty_five"
+                    android:layout_height="@dimen/thirty_five"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/twenty"
+                    android:src="@drawable/ic_user_filled" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pointsRL"
+                android:layout_width="@dimen/profile_tab_width"
+                android:layout_height="@dimen/profile_tab_height"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/points_bg">
+
+                <in.eightfolds.winga.utils.BernhcTextView
+                    android:id="@+id/totalPointTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="@dimen/twenty"
+                    android:textColor="@color/app_theme_red"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    tools:text="1500" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

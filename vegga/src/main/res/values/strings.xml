@@ -1,0 +1,513 @@
+<resources>
+
+    <!--<string name="facebook_app_id" translatable="false">750008652054241</string>-->
+    <string name="facebook_app_id" translatable="false">289431478336751</string>
+
+
+    <string name="default_notification_channel_id" translatable="false">default</string>
+
+    <string name="app_name">WinGa</string>
+    <string name="app_name_dev" translatable="false">WinGa-dev</string>
+    <string name="app_name_local" translatable="false">WinGa-local</string>
+    <string name="app_name_staging" translatable="false">WinGa-staging</string>
+    <string name="crash_toast_text">Ooooops ! I crashed, but a report has been sent to my developer to help fix the issue !</string>
+
+    <string name="somthing_wrong">Something went wrong. Please try again.</string>
+
+    <string name="password">Password</string>
+    <string name="password_mandate">Password *</string>
+    <string name="forgot_password_qstn">Forgot password?</string>
+    <string name="login">LOGIN</string>
+    <string name="login_small">Login</string>
+    <string name="register">REGISTER</string>
+    <string name="or_login">Or Login</string>
+    <string name="facebook" translatable="false">Facebook</string>
+    <string name="google" translatable="false">Google</string>
+    <string name="firstname">Display name *</string>
+    <string name="age_range">Age range *</string>
+    <string name="email">Email</string>
+    <string name="left_for_today_draw">Left for the session</string>
+    <string name="my_history">My history</string>
+    <string name="yesterday_winner">Recent winners</string>
+    <string name="iam_ready">I\'m ready</string>
+    <string name="askquestions">Answer questions</string>
+    <string name="invites">Invites</string>
+    <string name="share">Share</string>
+    <string name="refer_earn"><![CDATA[Refer & Earn]]></string>
+    <string name="addresses">Addresses</string>
+    <string name="view_all">View All</string>
+    <string name="notifications">Notifications</string>
+    <string name="settings">Settings</string>
+    <string name="rate_our_app">Rate our app</string>
+    <string name="support">Support</string>
+    <string name="terms_conditions"><![CDATA[Terms and Conditions]]></string>
+    <string name="privacy_policy"><![CDATA[Privacy Policy]]></string>
+    <string name="logout">Log out</string>
+    <string name="about">About</string>
+    <string name="tap_to_copy">Tap to copy</string>
+    <string name="share_code">Share code</string>
+    <string name="next">Next</string>
+    <string name="city">City *</string>
+    <string name="locality_area_street">Locality area or street *</string>
+    <string name="flatnum_buildingname">Flat number, building name *</string>
+    <string name="landmark_optional">Landmark (Optional)</string>
+    <string name="type">Type *</string>
+    <string name="pincode">Pincode *</string>
+    <string name="state">State *</string>
+    <string name="save">Save</string>
+    <string name="my_addresses">My addresses</string>
+    <string name="change_password">Change password</string>
+    <string name="deactivate_acct">Deactivate account</string>
+    <string name="turn_off_notications">Turn off notifications</string>
+    <string name="enable_notications">Enable notifications</string>
+    <string name="languages">Languages</string>
+    <string name="results">Results</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="done">Done</string>
+    <string name="clear">Clear</string>
+    <string name="history">History</string>
+    <string name="filters">Filters</string>
+    <string name="pending">Pending</string>
+    <string name="inprocess">In process</string>
+    <string name="delivered">Delivered</string>
+    <string name="apply">Apply</string>
+    <string name="apply_changes">Apply Changes</string>
+    <string name="default_string">Default</string>
+    <string name="set_as_primary">Set as Primary</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="address">Address</string>
+    <string name="current_password">Current password *</string>
+    <string name="new_password">New password *</string>
+    <string name="retype_password">Re-type new password *</string>
+    <string name="save_changes">Save changes</string>
+    <string name="generate_otp">Generate OTP</string>
+    <string name="mobile_num">Mobile number</string>
+    <string name="otp">OTP</string>
+    <string name="resend">Resend OTP</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="india">India</string>
+    <string name="other">Other</string>
+    <string name="your_registration">Your registration</string>
+    <string name="successful">Successful</string>
+
+    <string name="you_won_a">You won %s</string>
+    <string name="submit">Submit</string>
+    <string name="write_comment">Write comment</string>
+    <string name="send">Send</string>
+    <string name="alerts_promos_updates"><![CDATA[Alerts & Promotions / Updates]]></string>
+    <string name="alerts">Alerts</string>
+    <string name="promotions">Promotions</string>
+    <string name="updates">Updates</string>
+
+    <string name="do_u_want_logout">Do you want to logout?</string>
+
+
+    <string name="to_continue_in_en" translatable="false">To continue in English</string>
+    <string name="to_continue_in_te" translatable="false">కొనసాగడానికి తెలుగు</string>
+    <string name="to_continue_in_hi" translatable="false">जारी रखने के लिए हिन्दी</string>
+    <string name="to_continue_in_mr" translatable="false">सुरु ठेवण्यासाठी मराठी</string>
+    <string name="to_continue_in_ta" translatable="false">தொடர தமிழ்</string>
+    <string name="to_continue_in_kn" translatable="false">ಸೈನ್ ಇನ್ ಮಾಡಲು ಕನ್ನಡ</string>
+    <string name="to_continue_in_ml" translatable="false">മലയാളത്തിൽ തുടരാൻ</string>
+    <string name="to_continue_in_be" translatable="false">বাংলায় চালিয়ে যেতে</string>
+
+
+    <string name="i_accept">I accept</string>
+    <string name="redeem_points">Redeem points</string>
+    <string name="play_more_games">Watch more</string>
+    <string name="phoneNum">Mobile number</string>
+    <string name="find_your_mobile">Find your mobile number</string>
+    <string name="enter_code">Enter Code</string>
+    <string name="sent_code_desc">A text message with 6-digit verification code was just sent to %s</string>
+
+
+    <string name="point_rupee">%s Point = \u20B9 %s </string>
+
+    <string name="rs" translatable="false">\u20B9</string>
+    <string name="not_a_valid_user">Invalid user credentials</string>
+    <string name="enter_mobile">Enter mobile number</string>
+    <string name="enter_valid_phone">Enter your valid mobile number</string>
+    <string name="enter_password">Enter valid password</string>
+    <string name="enter_current_password">Enter valid current password</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="otp_sent">OTP sent on your number</string>
+    <string name="only_answers_correct">Only %s answers are correct</string>
+
+    <string name="enter_valid_ver_code">Enter valid verification code</string>
+    <string name="enter_new_password">Enter new password</string>
+    <string name="enter_reenter_password">Enter Re-type password</string>
+    <string name="passwords_mustbesame">Password and Re-type password must be same</string>
+    <string name="change_password_success">Password updated successfully</string>
+    <string name="enter_name">Enter your Display name</string>
+    <string name="no_special_characters_name">Display name field should not contain any special characters</string>
+    <string name="no_special_characters_city">City field should not contain any special characters</string>
+
+    <string name="enter_valid_email">Enter your valid Email ID</string>
+    <string name="enter_valid_city">Enter your city name</string>
+    <string name="enter_valid_pincode">Enter your valid Pin-code</string>
+    <string name="please_accept_terms"><![CDATA[Accept Terms & Conditions to proceed]]></string>
+    <string name="money_transfer">Money Transfer</string>
+    <string name="transfer_to_payttm">Transfer money to your Paytm wallet</string>
+    <string name="enable_transfer">Enable to transfer money</string>
+    <string name="paytm_wallet">Paytm Wallet</string>
+    <string name="allows_to_add_beneficiary">allows you to add beneficiary for money transfer from Paytm wallet</string>
+    <string name="transfer_money">Transfer Money</string>
+    <string name="paytm" translatable="false">Paytm</string>
+    <string name="please_select_answer_to_continue">Select your answer to continue</string>
+    <string name="logged_out">Logged out successfully</string>
+    <string name="content">Content</string>
+    <string name="successfully_submitted">Successfully Submitted</string>
+    <string name="select_valid_comment">Enter valid comment</string>
+    <string name="you_are_in_level">You are in %s level</string>
+    <string name="something_wrong">Something went wrong</string>
+    <string name="youtube_init_error">Unable to initialize youtube. Try again.</string>
+
+    <string name="exit">Exit</string>
+    <string name="do_u_want_exit">Do you want to Exit App?</string>
+    <string name="please_select_address_type">Select address type</string>
+    <string name="updated_primary_address_successfully">Primary address updated successfully</string>
+    <string name="deleted_address_successfully">Address deleted successfully</string>
+    <string name="address_added_successfully">Address added successfully</string>
+    <string name="address_edited_successfully">Address edit successful</string>
+    <string name="add_address">Add Address</string>
+    <string name="enter_valid_locality">Enter valid locality area or street</string>
+    <string name="enter_valid_flatnum_bul_name">Enter valid flat no. and building name</string>
+    <string name="oops">Ooops!</string>
+    <string name="no_internet">No internet connection found</string>
+    <string name="check_connection">check your connection</string>
+    <string name="retry">Retry</string>
+    <string name="you_are_lucky_star">Yippie! you are the lucky star. You have won %s</string>
+    <!--<string name="you_are_lucky_star">Yippie! you are the lucky star. You have won %s</string>-->
+    <string name="contact_for_info">Contact WinGa for further information</string>
+    <!--<string name="contact_for_info">Contact %s for further information</string>-->
+    <string name="congratulations">Congratulations!</string>
+    <string name="answer"> %s %s Answer</string>
+    <string name="welcome">Welcome</string>
+    <string name="starts_on">Starts on %s</string>
+    <string name="resend_code">Resend code</string>
+    <string name="code_sent_successfully">Code sent successfully</string>
+    <string name="alert">Alert</string>
+    <string name="select_an_option_to_proceed">Select an option to proceed</string>
+    <string name="enter_eight_digit_password">Password should have minimum 8 characters</string>
+    <string name="no_special_characters_password">Password field should not contain any special characters</string>
+    <string name="enter_eight_digit_new_password">New Password should have minimum 8 characters</string>
+    <string name="no_special_characters_new_password">New password field should not contain any special characters</string>
+    <string name="you_won">You won</string>
+    <string name="home">Home</string>
+    <string name="questions">Questions</string>
+    <string name="bonus_points">BONUS POINTS</string>
+    <string name="better_luck_next_time">Better luck next time!</string>
+    <string name="thank_u_for_playing">Thank you for watching.</string>
+    <string name="for_more_chances_participate">For more chances to win, keep participating.</string>
+    <string name="good_luck">Good luck!</string>
+    <string name="continue_text">Continue</string>
+    <string name="wow_you_earned">Wow, you\'ve earned</string>
+    <string name="point">Points</string>
+    <string name="play_more_to_earn_points">Watch more to earn more points</string>
+    <string name="version">Version %s</string>
+    <string name="go_to_questions">Go to questions</string>
+    <string name="session_closed">Current session closed.</string>
+    <string name="or">(or)</string>
+    <string name="not_scratched">Scratch the card, other wise you will lose points.</string>
+    <string name="info">Info</string>
+    <string name="cancel">Cancel</string>
+    <string name="loyalty_points">Loyalty points</string>
+    <string name="winners">Winners</string>
+    <string name="yesterday_winners_list">Recent winners list</string>
+    <string name="users">Users</string>
+    <string name="pick_the_date">Pick the date</string>
+
+    <string name="code_copied">Code copied to clipboard</string>
+    <string name="current_password_new_password_not_same">Current password and New password should not be same</string>
+    <string name="update_from_camera">Upload picture from Camera</string>
+    <string name="upload_from_gallery">Upload picture from Photo Library</string>
+    <string name="remove_photo">Remove photo</string>
+    <string name="do_u_want_to_exit_without_saving">Do you want to exit? Your changes will be lossed on exiting.</string>
+    <string name="change_mob_num">Change mobile number</string>
+    <string name="select_state">Select State</string>
+    <string name="do_it_later">Do it later</string>
+
+    <string name="confirmation">Confirmation</string>
+    <string name="are_u_sure_to_deactivate">Are you sure to deactivate account?</string>
+    <string name="deactivated_successfully">You account is deactivated successfully</string>
+    <string name="win_scratch_desc">Take bonus points too. \n Scratch and see.</string>
+    <string name="loss_scratch_desc">Never mind you still earn loyalty points. \n Scratch and see</string>
+    <string name="hurry_30mnts_left">Only left to play</string>
+    <string name="hurry_text">Hurry.!</string>
+    <string name="today_results_in">Today\'s results in</string>
+    <string name="powered_by" translatable="false">"Powered by Vegga AppSol Pvt. Ltd. © 2022 "</string>
+    <string name="send_email">\"Send mail…\"</string>
+    <string name="watch_more_videos_and"><![CDATA[Watch more &]]></string>
+    <string name="win_exciting_giftspl">Win exciting gifts</string>
+    <string name="item_delivered">Item delivered</string>
+    <string name="all_day">All day</string>
+    <string name="play_history">Play History</string>
+    <string name="day_by_day">Day by day</string>
+    <string name="no_addresses">No addresses</string>
+    <string name="no_loyalty_points">No Loyalty points</string>
+    <string name="and_win_loyalty_points">And win loyalty points</string>
+    <string name="no_history">No history</string>
+    <string name="play_multiple_days">Play multiple days</string>
+    <string name="and_win_gifts">and win gifts</string>
+    <string name="no_invites">No Invites</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="no_gifts_cap">NO GIFTS</string>
+    <string name="or_cap">OR</string>
+    <string name="no_winners">No Winners</string>
+    <string name="on_selected_date">On selected date</string>
+    <string name="no_notifications">No notifications</string>
+    <string name="total_points">Total points</string>
+    <string name="redeemed_points">Redeemed points</string>
+    <string name="available_points">Available points</string>
+    <string name="minimum_x_points">Minimum %s points</string>
+    <string name="redeem_points_to">Redeem to</string>
+    <string name="paytm_number">Paytm number</string>
+    <string name="enter_points_to_redeem">Enter Redeem points</string>
+    <string name="redeem_points_more_than_x">Redeem points must be more than %s</string>
+    <string name="redeem_points_cannot_be_more_than_x">Redeem points can\'t be more than %s</string>
+    <string name="x_rupees_transfer_to_paytm">\u20B9 %s transferring to your Paytm wallet</string>
+    <string name="session_start_soon">Session starts soon</string>
+    <string name="referral_code_optional">Referral code (optional)</string>
+    <string name="no_special_characters_referralcode">Referral Code field should not contain any special characters</string>
+    <string name="skip_underline"><u>Skip</u></string>
+    <string name="skip">Skip</string>
+    <string name="service_not_available">Service unavailable</string>
+    <string name="got_it">GOT IT</string>
+    <string name="you_have_won_rupees">You have won %s rupees</string>
+    <string name="okay">Ok</string>
+    <string name="check_internet">Please check your internet connection.</string>
+    <string name="total_rewards">Total Rewards</string>
+    <string name="select_preferred_state">Select preferred state</string>
+    <string name="preferred_state">Preferred State</string>
+    <string name="upload_photo_from">Upload photo from:</string>
+
+    <string name="min_inshort_en">min</string>
+
+    <string name="minuts_inshort_en">mins</string>
+    <string name="in_minutes">minutes</string>
+
+
+    <string name="tutorial_profile">Click this to view your profile</string>
+    <string name="tutorial_history">This is for your winning history</string>
+    <string name="tutorial_recent_winners">Check the recent winners here</string>
+    <string name="tutorial_edit_profile">To edit your profile</string>
+    <string name="tutorial_answer_questions">To answer questions</string>
+    <string name="tutorial_submit_answers">To submit answers</string>
+    <string name="tutorial_watch_video_again">To watch the video again</string>
+    <string name="tutorial_scratch">Scratch here to win more points</string>
+
+
+    <string name="pincode_not_accept_zeros">Pin-code not accepts all zeros.</string>
+
+
+    <string name="image_changed_successfully">Profile picture changed successfully.</string>
+    <string name="new_notification_received">New notification received</string>
+    <string name="video_not_playable">This video can not be played. Please wait.</string>
+    <string name="not_able_to_play">Unable to play video. Please try again after some time.</string>
+    <string name="image_removed_successfully">Profile picture removed successfully</string>
+    <string name="lets_start">Let\'s start</string>
+
+
+    <string name="tutorial_watch_videos">Watch videos</string>
+    <string name="tutorial_answer_simple_questions">Answer simple questions</string>
+    <string name="tutorial_get_lucky_to_stand_close">Get chance to stand close for winning exciting prizes</string>
+    <string name="tutorial_redeem_to_paytm">Directly redeem to Paytm account</string>
+
+    <string name="tutorial_scratch_card">Scratch this card to see loyalty points</string>
+    <string name="tutorial_watch_video">Watch video and answer questions.</string>
+
+
+    <string name="update">Update</string>
+    <string name="you_have_an_update">You have a version update. \n Update app to proceed.</string>
+    <string name="no_points_available">You don\'t have points to redeem</string>
+    <string name="unable_to_get_location">Unable to get location. Please enter manually.</string>
+    <string name="transferred_to_paytm">Your redeem request is successful, money will be transferred to your PayTm wallet with in 24 hours.</string>
+    <string name="enter_digit_otp">Please enter 6 digit OTP sent to your mobile number</string>
+
+
+    <string name="won">won %s</string>
+    <string name="do_u_want_to_reactivate">You have deactivated your account. \n Do you want to reactivate it?</string>
+    <string name="your_acnt_deactivated_contact_support">Your account is deactivated. Please contact WinGa support. </string>
+    <string name="set_password">Set your password</string>
+
+    <!--
+        <string name="play_game">Play Game</string>
+    -->
+
+    <string name="games_play">Watched</string>
+    <string name="games_won">Won</string>
+    <string name="game_won">Won</string>
+
+
+    <string name="play_game_get_rupees">Watch first video and get rewards</string>
+
+    <string name="keep_play_games">Keep watching more videos to increase your chance of winning and earning more loyalty points</string>
+    <string name="do_u_want_go_home">Are you sure, you want to quit?</string>
+    <string name="info_play_button">Click this to watch &amp; win</string>
+    <string name="win_points_on_refer">Earn %s rupees when your friend watches his first video, your friend also gets %s rupees.</string>
+
+    <string name="elegible_lucky_draw">congratulations! watch more and get rewards</string>
+    <string name="users_win_yesterday_lucky_daw">%s users won %s in WinGa lucky dip</string>
+    <string name="tutorial_winner">Celebrate now. \n Play more &amp; get Rewards.</string>
+    <string name="watch_tutorial">Watch tutorial to understand App</string>
+
+    <string name="tutorial_earn_rewards_loyalty_points">Earn rewards and loyalty points</string>
+
+    <!-- New strings -->
+
+    <string name="activate_your_mobile_number">Activate your mobile number</string>
+    <string name="your_acnt_activated_success">Your account activated successfully</string>
+    <string name="special_session">Special session</string>
+
+    <string name="contact_winga">Contact WinGa</string>
+    <string name="for_further_info"> for further information</string>
+    <string name="play_game">Watch Video</string>
+
+    <string name="winners_list">Winners list</string>
+    <string name="all">All (%d)</string>
+
+
+    <string name="resolved">Resolved</string>
+    <string name="closed">Closed</string>
+    <string name="office">Office</string>
+    <string name="support_service">Service</string>
+    <string name="support_delivery">Delivery</string>
+
+    <string name="address_home">Home</string>
+    <string name="select_content_type">Select support type</string>
+
+    <string name="select_another_pic">Unable to use selected picture. Please select another picture.</string>
+    <string name="not_registered_register_to_continue">You number is not registered. Please register to continue.</string>
+    <string name="unable_top_open_playstore">Unable to launch playstore.</string>
+
+    <string name="are_u_sure_to_delete_address">Are you sure to delete this address?</string>
+
+    <string name="rupee_value" translatable="false">\u20B9%s</string>
+
+    <string name="paid">Paid</string>
+    <string name="total_loyalty_points">Total loyalty points</string>
+    <string name="available">Available</string>
+    <string name="faq" translatable="false">FAQs</string>
+    <string name="both" translatable="false">Both</string>
+    <string name="image" translatable="false">Image</string>
+    <string name="video" translatable="false">Video</string>
+
+    <string name="preferred_content">Preferred Content</string>
+    <string name="game_starts_in_sec">Game will start in %s sec...</string>
+    <string name="unable_to_connect_try_again">Unable to connect to server. Please try again.</string>
+
+    <string name="remark">Remark:</string>
+    <string name="message">Message:</string>
+    <string name="status">Status:</string>
+    <string name="gender" translatable="false">Gender *</string>
+    <string name="male" translatable="false">Male</string>
+    <string name="female" translatable="false">Female</string>
+    <string name="select_age_range">Select your age range to continue</string>
+    <string name="select_gender">Select your gender to continue</string>
+
+
+    <string name="vouchers">Vouchers</string>
+    <string name="redeem_via">Redeem via</string>
+    <string name="add">Add</string>
+    <string name="no_vouchers">No Vouchers</string>
+    <string name="redeem">Redeem</string>
+    <string name="balance_points">Balance %s</string>
+    <string name="voucher_code">Voucher code# %s</string>
+    <string name="voucher_validity">Validity#%s</string>
+    <string name="select_voucher">Select atleast one voucher to continue</string>
+    <string name="voucher_transfer_successful">Your voucher redeem request is successful, status will be communicated to you registered mobile number with in 24 hours.</string>
+    <string name="voucher_details">Voucher details</string>
+    <string name="close">Close</string>
+    <string name="unable_to_redeem_try_again">Unable to redeem. Try again.</string>
+    <string name="insufficient_points">You don\'t have sufficient balance points to add this voucher</string>
+
+    <string name="no_redemption_option_available">Sorry, no redemption option available right now.</string>
+    <string name="not_available_now">Sorry %s not available now.</string>
+
+
+    <string name="other_country" translatable="false">Other country</string>
+
+    <string name="seconds_inshort_en" translatable="false">secs</string>
+    <string name="sec_inshort_en" translatable="false">sec</string>
+
+
+    <string name="retry_voucher_request_successful">Your voucher redeem request is successful, status will be communicated to you registered mobile number with in 24 hours.</string>
+    <string name="redeem_points_should_be_in_multiple">Redeem points should be multiple of %s</string>
+    <string name="enter_points_multiple_of">Enter points multiple of %s</string>
+
+
+    <string name="tutorial_vouchers">Redeem using vouchers</string>
+    <string name="transfer_may_fail_paytm">Transfer may not work in case</string>
+    <string name="paytm_failure_reason_one">1. You do not have a paytm account with your mobile number used in WinGa. Please create a paytm account.</string>
+    <string name="paytm_failure_reason_two">2. You may not done paytm KYC. In this case, you will receive an SMS from Paytm when WinGa tries to transfer cash into your Paytm Wallet.</string>
+    <string name="paytm_failure_reason_three">3. Your limit in Paytm may have overflown. Paytm allows monthly 10,000 for Min KYC customers. For increasing limit you need to do Paytm full KYC. Maximum limit for Full KYC customers is 1,00,000.</string>
+
+    <string name="tnx_for_registering">Thanks for registering.</string>
+    <string name="you_can_refer_friends">You can refer your friends</string>
+    <string name="winga_live_on">Winga will be live on</string>
+    <string name="view_your_app_in">View your app \n in your language</string>
+
+    <string name="youtube_internal_error">An internal error occurred while playing video. Please try again.</string>
+    <string name="youtube_player_view_small_error">Unable to play this video, as your player view is too small. Please try again.</string>
+    <string name="youtube_player_unauth_overlay_error">An unauthorized overlay error occurred while playing this video. Please try again.</string>
+    <string name="youtube_player_declined_restricted_content_error">Unable to play this video, as your settings have declined restricted content. Please try again.</string>
+    <string name="youtube_player_declined_high_bandwidth_error">Unable to play this video, as your settings declined high bandwidth. Please try again.</string>
+    <string name="youtube_player_network_error">A network error occurred while playing video. Please try again.</string>
+    <string name="youtube_player_unexpected_service_disc_error">Unexpected service disconnection occurred while playing video. Please try again.</string>
+    <string name="tap_to_replay_video">Tap to replay video</string>
+    <string name="shop_now">SHOP NOW</string>
+    <string name="view_more">VIEW MORE</string>
+    <string name="code_s">Code: %s</string>
+    <string name="pin">Pin: %s</string>
+    <string name="valid_till">Valid till: %s</string>
+    <string name="show_task">SHOW TASK</string>
+    <string name="pick_single">Please select your image</string>
+    <string name="camera_and_location_rationale">We require this permission to select photo from gallery and camera.</string>
+
+
+    <string-array name="dummy">
+        <item>Pasta</item>
+        <item>Pizza</item>
+        <item>Chocolate</item>
+        <item>Toon</item>
+    </string-array>
+    <string-array name="rainbow_dash">
+        <item>@color/rainbowViolet</item>
+        <item>@color/rainbowIndigo</item>
+        <item>@color/rainbowBlue</item>
+
+
+
+
+
+
+    </string-array>
+    <color name="rainbowViolet">@color/app_theme_red</color>
+    <color name="rainbowIndigo">@color/status_bar_color</color>
+    <color name="rainbowBlue">@color/colorWhite</color>
+
+    <declare-styleable name="Wheel">
+        <attr name="wheel_colors" format="reference" />
+        <attr name="wheel_stroke_color" format="color" />
+        <attr name="wheel_stroke_width" format="dimension" />
+        <attr name="wheel_items" format="reference" />
+        <attr name="wheel_text_size" format="dimension" />
+        <attr name="wheel_text_color" format="color" />
+        <attr name="wheel_arrow_color" format="color" />
+        <attr name="wheel_text_style" format="reference" />
+    </declare-styleable>
+
+
+    <!--
+        if (errorReason == YouTubePlayer.ErrorReason.INTERNAL_ERROR ||
+        errorReason == YouTubePlayer.ErrorReason.PLAYER_VIEW_TOO_SMALL ||
+        errorReason == YouTubePlayer.ErrorReason.UNAUTHORIZED_OVERLAY ||
+        errorReason == YouTubePlayer.ErrorReason.USER_DECLINED_RESTRICTED_CONTENT ||
+        errorReason == YouTubePlayer.ErrorReason.USER_DECLINED_HIGH_BANDWIDTH ||
+        errorReason == YouTubePlayer.ErrorReason.NETWORK_ERROR ||
+        errorReason == YouTubePlayer.ErrorReason.UNEXPECTED_SERVICE_DISCONNECTION) {
+    -->
+
+</resources>

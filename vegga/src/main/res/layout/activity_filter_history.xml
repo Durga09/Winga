@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/headerlay" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/applyRL"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_marginTop="@dimen/ten"
+                android:text="@string/filters"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/colorBlack"
+                android:textSize="12dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/filterItemsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_marginTop="@dimen/ten"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/applyRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rectangle_bg"
+            android:padding="@dimen/ten">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/twenty"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center_vertical"
+                android:text="@string/apply_changes"
+                android:textColor="@color/colorBlack"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/applyBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/lato_regular"
+                android:background="@drawable/blue_rectangle_bg_sharp_corner"
+                android:text="@string/apply"
+                android:textColor="@color/colorWhite" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

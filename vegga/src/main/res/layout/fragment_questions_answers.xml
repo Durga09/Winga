@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainRL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_bg_color_dark">
+
+
+    <LinearLayout
+        android:id="@+id/topLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <in.eightfolds.winga.utils.CustomImageView
+                android:id="@+id/bgImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/questionbg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/bgImage"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/backIv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/ten"
+                        android:src="@drawable/ic_back_black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/gotoHomeBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="@dimen/ten"
+                        android:text="@string/home"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/video_view_height"
+                        android:layout_height="@dimen/video_view_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/video_play_margin"
+                        android:layout_marginTop="20dp">
+
+                        <ImageView
+                            android:id="@+id/watchVideoIv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/play_red" />
+
+                        <View
+                            android:id="@+id/startPlayerView"
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:layout_centerInParent="true" />
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/thirty"
+                        android:layout_marginTop="@dimen/title_margin"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/questionProgressTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:gravity="bottom"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="32dp"
+                            android:textStyle="bold"
+                            tools:text="2/" />
+
+
+                        <TextView
+                            android:id="@+id/totalquestionsTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="3dp"
+                            android:foregroundGravity="bottom"
+                            android:gravity="bottom"
+                            android:text="3"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="24dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="7dp"
+                            android:foregroundGravity="bottom"
+                            android:gravity="bottom"
+                            android:text="@string/questions"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/questionAnswerdsScrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonLL"
+        android:layout_below="@+id/topLL"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/questionLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/questionTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/ten"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18dp"
+                    tools:text="/All Resources Company IDs / Farm/FAT/Medical Certificatess " />
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:nestedScrollingEnabled="true"
+                tools:listitem="@layout/item_question_option"
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/buttonLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/commentsTv"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="Comments(optional)"
+            android:textColorHint="@color/colorBlack"
+            android:background="@color/colorWhite"
+            android:padding="@dimen/twelve"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+
+            />
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/question_next_btn_height"
+            android:background="@color/submit_color"
+            android:text="@string/next"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <fragment
+            android:id="@+id/adBannerFragment"
+            android:name="in.eightfolds.winga.fragment.AdBannerFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

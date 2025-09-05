@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "263045285706",
+    "firebase_url": "https://wingadev.firebaseio.com",
+    "project_id": "wingadev",
+    "storage_bucket": "wingadev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263045285706:android:bea86f176186b21d",
+        "android_client_info": {
+          "package_name": "in.eightfolds.winga.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263045285706-98msfn4jud91pbsvvvo8r6ir86c2ajac.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.eightfolds.winga.dev",
+            "certificate_hash": "d4fb7a21cee6fe8078e4598b027c9f7b3f12f872"
+          }
+        },
+        {
+          "client_id": "263045285706-mi1f1agfaeqnvuq5or1vhjaluh96l5jn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACZTYVx2dZvp46KFmyrLGFsczpwUVkIvI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263045285706-mi1f1agfaeqnvuq5or1vhjaluh96l5jn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "263045285706-fkd2ij99h3ijadekd3dh26pu8umu7mj1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "in.eightfolds.WinGadev",
+                "app_store_id": "1424931697"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

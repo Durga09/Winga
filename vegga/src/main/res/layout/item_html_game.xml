@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cLL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/trasparant"
+    android:layout_marginTop="10dp"
+    >
+   <ImageView
+       android:id="@+id/playIv"
+       android:layout_width="60dp"
+       android:layout_height="60dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       android:src="@drawable/ic_play_icon_html_games"
+       app:tint="@color/colorBlack"
+       android:fontFamily="@font/lato_regular"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       android:layout_marginStart="10dp"
+       />
+
+
+    <TextView
+        android:id="@+id/htmlGameNameTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/playIv"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="10dp"
+        tools:text="Ram the yodha"
+
+        android:maxLines = "2"
+        android:layout_marginStart="10dp"
+        android:textSize="@dimen/twenty_five"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
