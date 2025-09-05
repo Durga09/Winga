@@ -1,0 +1,265 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'kotlin-android-extensions'
+
+
+android {
+    namespace "in.eightfolds.winga" // match your package name
+
+    compileSdkVersion 34
+//    buildToolsVersion '29.0.3'
+    defaultConfig {
+        applicationId "in.eightfolds.winga"
+        minSdk 33
+        targetSdkVersion 34
+        versionCode 41
+        versionName "1.9"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation":
+                                     "$projectDir/schemas".toString()]
+            }
+        }
+        sourceSets {
+            androidTest.assets.srcDirs += files("$projectDir/schemas".toString())
+        }
+    }
+
+    flavorDimensions "vegga"
+    productFlavors {
+        local {
+            dimension "vegga"
+            applicationIdSuffix ".dev"
+            versionNameSuffix ".local"
+            manifestPlaceholders = [appLabel: "@string/app_name_local"]
+            buildConfigField "String", "GOOGLE_CLIENT_ID", '"263045285706-mi1f1agfaeqnvuq5or1vhjaluh96l5jn.apps.googleusercontent.com"'
+            buildConfigField "String", "BASE_URL", '"http://192.168.0.118:8080/vegga"'
+
+            buildConfigField "String", "DYNAMIC_LINK", '"https://wingadev.page.link/?"'
+            buildConfigField "String", "DYNAMIC_LINK_DOMAIN", '"wingadev.page.link"'
+        }
+        dev {
+            dimension "vegga"
+            applicationIdSuffix ".dev"
+            versionNameSuffix ".dev"
+            manifestPlaceholders = [appLabel: "WSP"]
+            buildConfigField "String", "GOOGLE_CLIENT_ID", '"263045285706-mi1f1agfaeqnvuq5or1vhjaluh96l5jn.apps.googleusercontent.com"'
+//            buildConfigField "String", "BASE_URL", '"http://dev.eightfolds.in/vegga"'
+//            buildConfigField "String", "BASE_URL", '"http://prod.winga.in/winga2"'
+//            buildConfigField "String", "BASE_URL", '"http://stage.winga.in/winga"'
+            buildConfigField "String", "BASE_URL", '"http://13.203.151.153:8081/winga"'
+
+            buildConfigField "String", "BASE_URL_V2", '"http://13.203.151.153:8082"'
+            buildConfigField "String", "DYNAMIC_LINK", '"https://wingadev.page.link/?"'
+            buildConfigField "String", "DYNAMIC_LINK_DOMAIN", '"wingadev.page.link"'
+
+        }
+
+        staging {
+            dimension "vegga"
+            versionCode 23
+            versionName "1.61"
+            applicationIdSuffix ".staging"
+            versionNameSuffix ".staging"
+            manifestPlaceholders = [appLabel: "@string/app_name_staging"]
+            buildConfigField "String", "GOOGLE_CLIENT_ID", '"445900972911-5bva3k952cnqt68atnpsj6kujurkr6ll.apps.googleusercontent.com"'
+            buildConfigField "String", "BASE_URL", '"https://staging.winga.in"'
+            buildConfigField "String", "DYNAMIC_LINK", '"https://wingalive.page.link/refer/?"'
+            buildConfigField "String", "DYNAMIC_LINK_DOMAIN", '"winga.page.link"'
+        }
+
+        production {
+            dimension "vegga"
+            applicationId "com.veggaappsol.winga"
+            versionCode 43
+            versionName "3.0.6"
+            manifestPlaceholders = [appLabel: "WinGa"]
+            buildConfigField "String", "GOOGLE_CLIENT_ID", '"358655572908-aoii1fn0em7kb4jasesgs3a9c4fc9mfr.apps.googleusercontent.com"'
+            buildConfigField "String", "BASE_URL", '"https://prod.winga.in"'
+            buildConfigField "String", "BASE_URL_V2", '"https://api.winga.in"'
+            buildConfigField "String", "DYNAMIC_LINK", '"https://wingalive.page.link/refer/?"'
+            buildConfigField "String", "DYNAMIC_LINK_DOMAIN", '"wingalive.page.link"'
+
+        }
+    }
+
+    buildTypes {
+        release {
+
+            minifyEnabled true
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            buildConfigField "Boolean", "IS_DEBUG", "false"
+        }
+        debug {
+            debuggable true
+            buildConfigField "Boolean", "IS_DEBUG", "true" //make it true
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/ZZFW'
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+   /* buildFeatures {
+        viewBinding true
+    }*/
+    buildFeatures {
+        buildConfig true // ✅ enable BuildConfig generation
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.google.firebase:firebase-crashlytics-buildtools:2.8.1'
+    testImplementation 'junit:junit:4.12'
+//    implementation 'com.google.android.gms:play-services-ads:19.6.0'
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
+    implementation files('libs/bottomsheetimagepicker-release.aar')
+//    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.12.1'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.1'
+    implementation 'com.facebook.android:facebook-android-sdk:[8,9)'
+    implementation 'com.pddstudio:encrypted-preferences:1.3.0'
+    implementation 'ch.acra:acra:4.9.2'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    implementation 'androidx.paging:paging-runtime:2.0.0'
+
+    implementation 'com.google.firebase:firebase-dynamic-links:16.1.5'
+    implementation 'com.google.firebase:firebase-core:18.0.1'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+
+    implementation 'com.github.liuguangqiang.swipeback:library:1.0.2@aar'
+
+    implementation 'com.google.android.libraries.places:places:1.1.0'
+    //    for WebP playing Webp images replacement of Gif
+//    def GLIDE_VERSION = "4.7.1"
+//    implementation "com.zlc.glide:webpdecoder:0.0.8.${GLIDE_VERSION}"
+//    implementation "com.github.bumptech.glide:glide:${GLIDE_VERSION}"
+//    annotationProcessor "com.github.bumptech.glide:compiler:${GLIDE_VERSION}"
+
+
+//    implementation 'com.github.bumptech.glide:glide:4.9.0'
+//    implementation 'jp.wasabeef:glide-transformations:4.1.0'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.google.android.gms:play-services-places:16.0.0'
+
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    implementation 'com.airbnb.android:lottie:3.3.1'
+
+    implementation project(':materialquicktour')
+//    implementation project(':SpinningWheelAndroid')
+
+    implementation 'androidx.ads:ads-identifier:1.0.0-alpha04'
+
+    // Optional - add if you're using Guava to handle
+    // return values of type ListenableFuture.
+    implementation 'com.google.guava:guava:28.0-android'
+
+
+    def room_version = "1.1.1"
+    implementation 'androidx.room:room-runtime:2.0.0'
+    annotationProcessor 'androidx.room:room-compiler:2.0.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version" // use kapt for Kotlin
+
+    implementation "com.github.skydoves:progressview:1.1.2"
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.4"
+
+//    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+//    implementation 'net.gotev:uploadservice:3.4.1'
+//implementation 'com.zlc.glide:webpdecoder:1.6.4.10.0'
+//    implementation 'com.adefruandta.spinningwheel:spinningwheel:0.1.0'
+//    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.0'
+//    implementation "com.github.xinyuez:easypermissions:2.0.1"
+//    implementation 'com.android.volley:volley:1.1.0'
+    //    implementation 'com.nabinbhandari.android:permissions:3.8'
+
+//    implementation 'com.droidninja:filepicker:2.2.5'
+
+    implementation 'com.github.smarteist:Android-Image-Slider:1.4.0'
+//    implementation 'net.gotev:uploadservice:4.7.0'
+//    implementation 'net.gotev:uploadservice-okhttp:4.7.0'
+//    implementation 'com.github.zlc1990413:GlideWebpDecoder:1.6.4.11.0'
+//    implementation 'com.github.adefruandta:SpinningWheel:0.1.0'
+//    implementation 'com.vanniktech:android-image-cropper:4.5.0'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'pub.devrel:easypermissions:3.0.0'
+//    implementation 'com.nabinbhandari.android:permissions:4.0.0'
+//    implementation 'com.nabinbhandari.android:permissions:3.8'
+
+    implementation 'com.github.jaiselrahman:FilePicker:1.3.2'
+//    implementation 'com.adefruandta.spinningwheel:spinningwheel:0.1.0'
+    implementation 'com.github.tommus:youtube-android-player-api:1.2.3'
+    implementation 'net.gotev:uploadservice:4.9.4'
+//    implementation 'com.github.arthurhub:Android-Image-Cropper:v3.0.0'
+
+}
+
+
+configurations.all {
+
+
+    /*  resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '27.1.1'
+            }
+        }
+    }
+*/
+}
+
+repositories {
+    mavenCentral()
+
+}
