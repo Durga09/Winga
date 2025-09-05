@@ -453,6 +453,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener, 
                 Intent intent = new Intent(this, ProfileActivity.class);
                 if (profilePicId != null && profilePicId.intValue() != 0) {
                     intent.putExtra("profilepic", profilePicId);
+
                 }
                 startActivity(intent);
             }
